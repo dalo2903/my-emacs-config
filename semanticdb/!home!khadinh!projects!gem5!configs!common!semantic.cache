@@ -1,0 +1,225 @@
+;; Object semanticdb-project-database-file-1567abf8afa2
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1567abf8afa2"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1567abf8afbc"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [2276 2313])
+            ("__future__" include nil nil [2314 2352])
+            ("six" include nil nil [2354 2364])
+            ("m5" include nil nil [2366 2375])
+            ("m5.objects" include nil nil [2376 2400])
+            ("m5.util" include nil nil [2401 2422])
+            ("common.Benchmarks" include nil nil [2423 2454])
+            ("common" include nil nil [2455 2484])
+            ("if" code nil nil [2486 2513])
+            ("os_types" variable nil nil [2570 3003])
+            ("CowIdeDisk" type
+               (:superclasses ("IdeDisk")
+                :members 
+                  ( ("image" variable nil (reparse-symbol indented_block_body) [3036 3134])
+                    ("childImage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3155 3159])
+                            ("ci" variable nil (reparse-symbol function_parameters) [3161 3163]))                          )
+                        (reparse-symbol indented_block_body) [3140 3207]))                  
+                :type "class")
+                nil [3005 3207])
+            ("MemBus" type
+               (:superclasses ("SystemXBar")
+                :members 
+                  ( ("badaddr_responder" variable nil (reparse-symbol indented_block_body) [3238 3267])
+                    ("default" variable nil (reparse-symbol indented_block_body) [3272 3308]))                  
+                :type "class")
+                nil [3208 3309])
+            ("attach_9p" function (:arguments 
+              ( ("parent" variable nil (reparse-symbol function_parameters) [3324 3330])
+                ("bus" variable nil (reparse-symbol function_parameters) [3332 3335]))              ) nil [3310 3792])
+            ("fillInCmdline" function (:arguments 
+              ( ("mdesc" variable nil (reparse-symbol function_parameters) [3811 3816])
+                ("template" variable nil (reparse-symbol function_parameters) [3818 3826])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [3828 3836]))              ) nil [3793 4008])
+            ("makeCowDisks" function (:arguments 
+              ( ("disk_paths" variable nil (reparse-symbol function_parameters) [4026 4036]))              ) nil [4009 4211])
+            ("makeSparcSystem" function (:arguments 
+              ( ("mem_mode" variable nil (reparse-symbol function_parameters) [4232 4240])
+                ("mdesc" variable nil (reparse-symbol function_parameters) [4242 4247])
+                ("cmdline" variable nil (reparse-symbol function_parameters) [4254 4261]))              ) nil [4212 7009])
+            ("makeArmSystem" function (:arguments 
+              ( ("mem_mode" variable nil (reparse-symbol function_parameters) [7028 7036])
+                ("machine_type" variable nil (reparse-symbol function_parameters) [7038 7050])
+                ("num_cpus" variable nil (reparse-symbol function_parameters) [7052 7060])
+                ("mdesc" variable nil (reparse-symbol function_parameters) [7064 7069])
+                ("dtb_filename" variable nil (reparse-symbol function_parameters) [7094 7106])
+                ("bare_metal" variable nil (reparse-symbol function_parameters) [7113 7123])
+                ("cmdline" variable nil (reparse-symbol function_parameters) [7131 7138])
+                ("external_memory" variable nil (reparse-symbol function_parameters) [7163 7178])
+                ("ruby" variable nil (reparse-symbol function_parameters) [7183 7187])
+                ("security" variable nil (reparse-symbol function_parameters) [7195 7203])
+                ("vio_9p" variable nil (reparse-symbol function_parameters) [7229 7235])
+                ("bootloader" variable nil (reparse-symbol function_parameters) [7242 7252])
+                ("pim" variable nil (reparse-symbol function_parameters) [7259 7262]))              ) nil [7010 14051])
+            ("makeLinuxMipsSystem" function (:arguments 
+              ( ("mem_mode" variable nil (reparse-symbol function_parameters) [14077 14085])
+                ("mdesc" variable nil (reparse-symbol function_parameters) [14087 14092])
+                ("cmdline" variable nil (reparse-symbol function_parameters) [14099 14106]))              ) nil [14053 15401])
+            ("x86IOAddress" function (:arguments 
+              ( ("port" variable nil (reparse-symbol function_parameters) [15419 15423]))              ) nil [15402 15513])
+            ("connectX86ClassicSystem" function (:arguments 
+              ( ("x86_sys" variable nil (reparse-symbol function_parameters) [15542 15549])
+                ("numCPUs" variable nil (reparse-symbol function_parameters) [15551 15558])
+                ("pim" variable nil (reparse-symbol function_parameters) [15560 15563]))              ) nil [15514 17463])
+            ("connectX86RubySystem" function (:arguments 
+              ( ("x86_sys" variable nil (reparse-symbol function_parameters) [17489 17496])
+                ("pim" variable nil (reparse-symbol function_parameters) [17498 17501]))              ) nil [17464 17969])
+            ("makeX86System" function (:arguments 
+              ( ("mem_mode" variable nil (reparse-symbol function_parameters) [18041 18049])
+                ("numCPUs" variable nil (reparse-symbol function_parameters) [18051 18058])
+                ("mdesc" variable nil (reparse-symbol function_parameters) [18062 18067])
+                ("workload" variable nil (reparse-symbol function_parameters) [18074 18082])
+                ("Ruby" variable nil (reparse-symbol function_parameters) [18089 18093])
+                ("pim" variable nil (reparse-symbol function_parameters) [18101 18104]))              ) nil [18023 22316])
+            ("makeLinuxX86System" function (:arguments 
+              ( ("mem_mode" variable nil (reparse-symbol function_parameters) [22340 22348])
+                ("numCPUs" variable nil (reparse-symbol function_parameters) [22350 22357])
+                ("mdesc" variable nil (reparse-symbol function_parameters) [22361 22366])
+                ("Ruby" variable nil (reparse-symbol function_parameters) [22373 22377])
+                ("cmdline" variable nil (reparse-symbol function_parameters) [22408 22415])
+                ("pim" variable nil (reparse-symbol function_parameters) [22422 22425]))              ) nil [22317 24469])
+            ("makeBareMetalRiscvSystem" function (:arguments 
+              ( ("mem_mode" variable nil (reparse-symbol function_parameters) [24499 24507])
+                ("mdesc" variable nil (reparse-symbol function_parameters) [24509 24514])
+                ("cmdline" variable nil (reparse-symbol function_parameters) [24521 24528]))              ) nil [24470 25174])
+            ("makeDualRoot" function (:arguments 
+              ( ("full_system" variable nil (reparse-symbol function_parameters) [25192 25203])
+                ("testSystem" variable nil (reparse-symbol function_parameters) [25205 25215])
+                ("driveSystem" variable nil (reparse-symbol function_parameters) [25217 25228])
+                ("dumpfile" variable nil (reparse-symbol function_parameters) [25230 25238]))              ) nil [25175 25960])
+            ("makeDistRoot" function (:arguments 
+              ( ("testSystem" variable nil (reparse-symbol function_parameters) [25979 25989])
+                ("rank" variable nil (reparse-symbol function_parameters) [26008 26012])
+                ("size" variable nil (reparse-symbol function_parameters) [26031 26035])
+                ("server_name" variable nil (reparse-symbol function_parameters) [26054 26065])
+                ("server_port" variable nil (reparse-symbol function_parameters) [26084 26095])
+                ("sync_repeat" variable nil (reparse-symbol function_parameters) [26114 26125])
+                ("sync_start" variable nil (reparse-symbol function_parameters) [26144 26154])
+                ("linkspeed" variable nil (reparse-symbol function_parameters) [26173 26182])
+                ("linkdelay" variable nil (reparse-symbol function_parameters) [26201 26210])
+                ("dumpfile" variable nil (reparse-symbol function_parameters) [26229 26237]))              ) nil [25962 27208]))          
+      :file "FSConfig.py"
+      :pointmax 27208
+      :fsize 27207
+      :lastmodtime '(24369 4225 24636 494000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1567abfcb748"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1554 1591])
+            ("__future__" include nil nil [1592 1630])
+            ("common.SysPaths" include nil nil [1632 1680])
+            ("os" include nil nil [1681 1710])
+            ("m5.defines" include nil nil [1711 1742])
+            ("SysConfig" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1876 1900])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1909 1931])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1940 1958])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1967 1986])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1995 2016]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1778 1782])
+                            ("script" variable nil (reparse-symbol function_parameters) [1784 1790])
+                            ("mem" variable nil (reparse-symbol function_parameters) [1797 1800])
+                            ("disks" variable nil (reparse-symbol function_parameters) [1807 1812])
+                            ("rootdev" variable nil (reparse-symbol function_parameters) [1819 1826])
+                            ("os_type" variable nil (reparse-symbol function_parameters) [1850 1857]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1765 2017])
+                    ("script" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2033 2037]))                          )
+                        (reparse-symbol indented_block_body) [2022 2147])
+                    ("mem" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2160 2164]))                          )
+                        (reparse-symbol indented_block_body) [2152 2265])
+                    ("disks" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2280 2284]))                          )
+                        (reparse-symbol indented_block_body) [2270 2417])
+                    ("rootdev" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2434 2438]))                          )
+                        (reparse-symbol indented_block_body) [2422 2537])
+                    ("os_type" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2554 2558]))                          )
+                        (reparse-symbol indented_block_body) [2542 2588]))                  
+                :type "class")
+                nil [1744 2588])
+            ("Benchmarks" variable nil nil [2743 6251])
+            ("benchs" variable nil nil [6253 6285])
+            ("benchs" code nil nil [6286 6299])
+            ("DefinedBenchmarks" variable nil nil [6300 6337]))          
+      :file "Benchmarks.py"
+      :pointmax 6338
+      :fsize 6337
+      :lastmodtime '(24319 27557 979662 490000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1567aba54c64"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1549 1586])
+            ("__future__" include nil nil [1587 1625])
+            ("six" include nil nil [1627 1655])
+            ("sys" include nil nil [1656 1670])
+            ("os" include nil nil [1656 1670])
+            ("config_path" variable nil nil [1672 1728])
+            ("config_root" variable nil nil [1729 1771])
+            ("PathSearchFunc" type
+               (:superclasses ("object")
+                :members 
+                  ( ("_sys_paths" variable nil (reparse-symbol indented_block_body) [1807 1824])
+                    ("environment_variable" variable nil (reparse-symbol indented_block_body) [1829 1861])
+                    ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [1920 1990])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1998 2035])
+                            ("if" code nil (reparse-symbol indented_block_body) [2044 2098]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1880 1884])
+                            ("subdirs" variable nil (reparse-symbol function_parameters) [1886 1893])
+                            ("sys_paths" variable nil (reparse-symbol function_parameters) [1895 1904]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1867 2098])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2116 2120])
+                            ("filename" variable nil (reparse-symbol function_parameters) [2122 2130]))                          )
+                        (reparse-symbol indented_block_body) [2103 3361]))                  
+                :type "class")
+                nil [1773 3361])
+            ("disk" variable nil nil [3362 3392])
+            ("binary" variable nil nil [3393 3428])
+            ("script" variable nil nil [3429 3485]))          
+      :file "SysPaths.py"
+      :pointmax 3486
+      :fsize 3485
+      :lastmodtime '(24319 27647 122181 850000)
+      :unmatched-syntax nil))
+  :file "!home!khadinh!projects!gem5!configs!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

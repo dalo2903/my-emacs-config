@@ -1,0 +1,44 @@
+;; Object semanticdb-project-database-file-1558e6a108b8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1558e6a108b8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1558e6a108ca"
+      :major-mode python-mode
+      :tags 
+        '( ("math" include nil nil [1604 1615])
+            ("m5" include nil nil [1616 1625])
+            ("m5.objects" include nil nil [1626 1650])
+            ("m5.defines" include nil nil [1651 1682])
+            ("create_directories" include nil nil [1694 1736])
+            ("create_topology" include nil nil [1694 1736])
+            ("send_evicts" include nil nil [1748 1766])
+            ("L1Cache" type
+               (:superclasses ("RubyCache")
+                :members 
+                  ( ("pass" code nil nil nil))                  
+                :type "class")
+                nil [1810 1841])
+            ("L2Cache" type
+               (:superclasses ("RubyCache")
+                :members 
+                  ( ("pass" code nil nil nil))                  
+                :type "class")
+                nil [1841 1872])
+            ("define_options" function (:arguments 
+              ( ("parser" variable nil (reparse-symbol function_parameters) [1892 1898]))              ) nil [1873 1912])
+            ("create_system" function (:arguments 
+              ( ("options" variable nil (reparse-symbol function_parameters) [1931 1938])
+                ("full_system" variable nil (reparse-symbol function_parameters) [1940 1951])
+                ("system" variable nil (reparse-symbol function_parameters) [1953 1959])
+                ("dma_ports" variable nil (reparse-symbol function_parameters) [1961 1970])
+                ("bootmem" variable nil (reparse-symbol function_parameters) [1972 1979])
+                ("ruby_system" variable nil (reparse-symbol function_parameters) [1999 2010]))              ) nil [1913 10558]))          
+      :file "MESI_Two_Level.py"
+      :pointmax 10558
+      :fsize 10557
+      :lastmodtime '(24355 52413 947013 793000)
+      :unmatched-syntax nil))
+  :file "!home!khadinh!projects!gem5!configs!ruby!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

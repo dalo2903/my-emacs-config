@@ -1,0 +1,3102 @@
+;; Object semanticdb-project-database-file-155c5664fa6e
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155c5664fa6e"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155c5664fa78"
+      :major-mode c++-mode
+      :tags 
+        '( ("llvm/Transforms/Instrumentation/AddressSanitizer.h" include nil nil [630 691])
+            ("llvm/ADT/ArrayRef.h" include nil nil [692 722])
+            ("llvm/ADT/DenseMap.h" include nil nil [723 753])
+            ("llvm/ADT/DepthFirstIterator.h" include nil nil [754 794])
+            ("llvm/ADT/SmallPtrSet.h" include nil nil [795 828])
+            ("llvm/ADT/SmallVector.h" include nil nil [829 862])
+            ("llvm/ADT/Statistic.h" include nil nil [863 894])
+            ("llvm/ADT/StringExtras.h" include nil nil [895 929])
+            ("llvm/ADT/StringRef.h" include nil nil [930 961])
+            ("llvm/ADT/Triple.h" include nil nil [962 990])
+            ("llvm/ADT/Twine.h" include nil nil [991 1018])
+            ("llvm/Analysis/MemoryBuiltins.h" include nil nil [1019 1060])
+            ("llvm/Analysis/TargetLibraryInfo.h" include nil nil [1061 1105])
+            ("llvm/Analysis/ValueTracking.h" include nil nil [1106 1146])
+            ("llvm/BinaryFormat/MachO.h" include nil nil [1147 1183])
+            ("llvm/IR/Argument.h" include nil nil [1184 1213])
+            ("llvm/IR/Attributes.h" include nil nil [1214 1245])
+            ("llvm/IR/BasicBlock.h" include nil nil [1246 1277])
+            ("llvm/IR/CallSite.h" include nil nil [1278 1307])
+            ("llvm/IR/Comdat.h" include nil nil [1308 1335])
+            ("llvm/IR/Constant.h" include nil nil [1336 1365])
+            ("llvm/IR/Constants.h" include nil nil [1366 1396])
+            ("llvm/IR/DIBuilder.h" include nil nil [1397 1427])
+            ("llvm/IR/DataLayout.h" include nil nil [1428 1459])
+            ("llvm/IR/DebugInfoMetadata.h" include nil nil [1460 1498])
+            ("llvm/IR/DebugLoc.h" include nil nil [1499 1528])
+            ("llvm/IR/DerivedTypes.h" include nil nil [1529 1562])
+            ("llvm/IR/Dominators.h" include nil nil [1563 1594])
+            ("llvm/IR/Function.h" include nil nil [1595 1624])
+            ("llvm/IR/GlobalAlias.h" include nil nil [1625 1657])
+            ("llvm/IR/GlobalValue.h" include nil nil [1658 1690])
+            ("llvm/IR/GlobalVariable.h" include nil nil [1691 1726])
+            ("llvm/IR/IRBuilder.h" include nil nil [1727 1757])
+            ("llvm/IR/InlineAsm.h" include nil nil [1758 1788])
+            ("llvm/IR/InstVisitor.h" include nil nil [1789 1821])
+            ("llvm/IR/InstrTypes.h" include nil nil [1822 1853])
+            ("llvm/IR/Instruction.h" include nil nil [1854 1886])
+            ("llvm/IR/Instructions.h" include nil nil [1887 1920])
+            ("llvm/IR/IntrinsicInst.h" include nil nil [1921 1955])
+            ("llvm/IR/Intrinsics.h" include nil nil [1956 1987])
+            ("llvm/IR/LLVMContext.h" include nil nil [1988 2020])
+            ("llvm/IR/MDBuilder.h" include nil nil [2021 2051])
+            ("llvm/IR/Metadata.h" include nil nil [2052 2081])
+            ("llvm/IR/Module.h" include nil nil [2082 2109])
+            ("llvm/IR/Type.h" include nil nil [2110 2135])
+            ("llvm/IR/Use.h" include nil nil [2136 2160])
+            ("llvm/IR/Value.h" include nil nil [2161 2187])
+            ("llvm/InitializePasses.h" include nil nil [2188 2222])
+            ("llvm/MC/MCSectionMachO.h" include nil nil [2223 2258])
+            ("llvm/Pass.h" include nil nil [2259 2281])
+            ("llvm/Support/Casting.h" include nil nil [2282 2315])
+            ("llvm/Support/CommandLine.h" include nil nil [2316 2353])
+            ("llvm/Support/Debug.h" include nil nil [2354 2385])
+            ("llvm/Support/ErrorHandling.h" include nil nil [2386 2425])
+            ("llvm/Support/MathExtras.h" include nil nil [2426 2462])
+            ("llvm/Support/ScopedPrinter.h" include nil nil [2463 2502])
+            ("llvm/Support/raw_ostream.h" include nil nil [2503 2540])
+            ("llvm/Transforms/Instrumentation.h" include nil nil [2541 2585])
+            ("llvm/Transforms/Utils/ASanStackFrameLayout.h" include nil nil [2586 2641])
+            ("llvm/Transforms/Utils/BasicBlockUtils.h" include nil nil [2642 2692])
+            ("llvm/Transforms/Utils/Local.h" include nil nil [2693 2733])
+            ("llvm/Transforms/Utils/ModuleUtils.h" include nil nil [2734 2780])
+            ("llvm/Transforms/Utils/PromoteMemToReg.h" include nil nil [2781 2831])
+            ("algorithm" include (:system-flag t) nil [2832 2852])
+            ("cassert" include (:system-flag t) nil [2853 2871])
+            ("cstddef" include (:system-flag t) nil [2872 2890])
+            ("cstdint" include (:system-flag t) nil [2891 2909])
+            ("iomanip" include (:system-flag t) nil [2910 2928])
+            ("limits" include (:system-flag t) nil [2929 2946])
+            ("memory" include (:system-flag t) nil [2947 2964])
+            ("sstream" include (:system-flag t) nil [2965 2983])
+            ("string" include (:system-flag t) nil [2984 3001])
+            ("tuple" include (:system-flag t) nil [3002 3018])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [3020 3041])
+            ("DEBUG_TYPE" variable (:constant-flag t) nil [3051 3061])
+            ("kDefaultShadowScale" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "3"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [3070 3116])
+            ("kDynamicShadowSentinel" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "std::numeric_limits<uint64_t>::max()"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [3235 3323])
+            ("kSmallX86_64ShadowOffsetBase" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "0x7FFFFFFF"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [3324 3388])
+            ("0xFFFULL" variable (:type "int") nil [3458 3467])
+            ("kLinuxKasan_ShadowOffset64" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "0xdffffc0000000000"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [3468 3538])
+            ("kMIPS32_ShadowOffset32" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "0x0aaa0000"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [3657 3715])
+            ("kNetBSDKasan_ShadowOffset64" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "0xdfff900000000000"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [4073 4144])
+            ("kEmscriptenShadowOffset" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "0"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [4263 4313])
+            ("kMyriadShadowScale" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "5"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [4315 4360])
+            ("kMyriadMemoryOffset32" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "0x80000000ULL"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [4361 4421])
+            ("kMyriadMemorySize32" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "0x20000000ULL"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [4422 4480])
+            ("kMyriadTagShift" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "29"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [4481 4524])
+            ("kMyriadDDRTag" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "4"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [4525 4565])
+            ("kMyriadCacheBitMask32" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "0x40000000ULL"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [4566 4626])
+            ("kWindowsShadowOffset64" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "kDynamicShadowSentinel"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [4681 4751])
+            ("kCurrentStackFrameMagic" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "0x41B58AB3"
+                :type ("uintptr_t" type (:type "class") nil nil))
+                nil [4871 4931])
+            ("kRetiredStackFrameMagic" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "0x45E0360E"
+                :type ("uintptr_t" type (:type "class") nil nil))
+                nil [4932 4992])
+            ("kAsanModuleCtorName" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"asan.module_ctor\""
+                :type "char")
+                nil [4994 5060])
+            ("kAsanModuleDtorName" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"asan.module_dtor\""
+                :type "char")
+                nil [5061 5127])
+            ("kAsanCtorAndDtorPriority" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "1"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [5128 5179])
+            ("kAsanEmscriptenCtorAndDtorPriority" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "50"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [5258 5320])
+            ("kAsanReportErrorTemplate" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_report_\""
+                :type "char")
+                nil [5321 5390])
+            ("kAsanRegisterGlobalsName" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_register_globals\""
+                :type "char")
+                nil [5391 5469])
+            ("kAsanUnregisterGlobalsName" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_unregister_globals\""
+                :type "char")
+                nil [5470 5556])
+            ("kAsanRegisterImageGlobalsName" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_register_image_globals\""
+                :type "char")
+                nil [5557 5648])
+            ("kAsanUnregisterImageGlobalsName" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_unregister_image_globals\""
+                :type "char")
+                nil [5649 5744])
+            ("kAsanRegisterElfGlobalsName" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_register_elf_globals\""
+                :type "char")
+                nil [5745 5832])
+            ("kAsanUnregisterElfGlobalsName" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_unregister_elf_globals\""
+                :type "char")
+                nil [5833 5924])
+            ("kAsanPoisonGlobalsName" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_before_dynamic_init\""
+                :type "char")
+                nil [5925 6004])
+            ("kAsanUnpoisonGlobalsName" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_after_dynamic_init\""
+                :type "char")
+                nil [6005 6085])
+            ("kAsanInitName" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_init\""
+                :type "char")
+                nil [6086 6141])
+            ("kAsanVersionCheckNamePrefix" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_version_mismatch_check_v\""
+                :type "char")
+                nil [6142 6235])
+            ("kAsanPtrCmp" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__sanitizer_ptr_cmp\""
+                :type "char")
+                nil [6236 6297])
+            ("kAsanPtrSub" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__sanitizer_ptr_sub\""
+                :type "char")
+                nil [6298 6359])
+            ("kAsanHandleNoReturnName" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_handle_no_return\""
+                :type "char")
+                nil [6360 6437])
+            ("kMaxAsanStackMallocSizeClass" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "10"
+                :type "int")
+                nil [6438 6489])
+            ("kAsanStackMallocNameTemplate" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_stack_malloc_\""
+                :type "char")
+                nil [6490 6569])
+            ("kAsanStackFreeNameTemplate" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_stack_free_\""
+                :type "char")
+                nil [6570 6645])
+            ("kAsanGenPrefix" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"___asan_gen_\""
+                :type "char")
+                nil [6646 6703])
+            ("kODRGenPrefix" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__odr_asan_gen_\""
+                :type "char")
+                nil [6704 6763])
+            ("kSanCovGenPrefix" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__sancov_gen_\""
+                :type "char")
+                nil [6764 6824])
+            ("kAsanSetShadowPrefix" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_set_shadow_\""
+                :type "char")
+                nil [6825 6894])
+            ("kAsanPoisonStackMemoryName" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_poison_stack_memory\""
+                :type "char")
+                nil [6895 6982])
+            ("kAsanUnpoisonStackMemoryName" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_unpoison_stack_memory\""
+                :type "char")
+                nil [6983 7074])
+            ("kAsanGlobalsRegisteredFlagName" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"___asan_globals_registered\""
+                :type "char")
+                nil [7219 7310])
+            ("kAsanOptionDetectUseAfterReturn" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_option_detect_stack_use_after_return\""
+                :type "char")
+                nil [7312 7421])
+            ("kAsanShadowMemoryDynamicAddress" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_shadow_memory_dynamic_address\""
+                :type "char")
+                nil [7423 7525])
+            ("kAsanAllocaPoison" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_alloca_poison\""
+                :type "char")
+                nil [7527 7595])
+            ("kAsanAllocasUnpoison" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"__asan_allocas_unpoison\""
+                :type "char")
+                nil [7596 7670])
+            ("kNumberOfAccessSizes" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "5"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [7725 7770])
+            ("kAllocaRzSize" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "32"
+                :type "unsigned int")
+                nil [7772 7813])
+            ("ClEnableKasan" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7894 7951])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7957 7968])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7969 7984]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7839 7986])
+            ("ClRecover" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8044 8100])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8106 8117])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8118 8133]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7988 8135])
+            ("ClInsertVersionCheck" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8227 8287])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8293 8304])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8305 8319]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [8137 8321])
+            ("ClInstrumentReads" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8487 8527])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8568 8579])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8580 8594]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [8384 8596])
+            ("ClInstrumentWrites" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8669 8710])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8716 8727])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8728 8742]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [8598 8744])
+            ("ClInstrumentAtomics" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8823 8880])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8882 8893])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8898 8912]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [8746 8914])
+            ("ClAlwaysSlowPath" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8988 9051])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9053 9064])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9069 9084]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [8916 9086])
+            ("ClForceDynamicShadow" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9168 9239])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9245 9256])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9257 9272]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [9088 9274])
+            ("ClWithIfunc" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9348 9464])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9482 9493])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9494 9508]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [9276 9510])
+            ("ClWithIfuncSuppressRemat" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9601 9727])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9733 9744])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9745 9759]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [9512 9761])
+            ("ClMaxInsnsToInstrumentPerBB" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10068 10083])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10089 10161])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10167 10178]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [9992 10179])
+            ("ClStack" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10284 10315])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10346 10357])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10358 10372]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [10241 10374])
+            ("ClMaxInlinePoisoningSize" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10468 10554])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10560 10571])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10572 10584]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("uint32_t" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [10375 10586])
+            ("ClUseAfterReturn" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10689 10729])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10769 10780])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10781 10795]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [10588 10797])
+            ("ClRedzoneByvalArgs" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10906 11079])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11081 11092])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11133 11147]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [10799 11149])
+            ("ClUseAfterScope" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11249 11288])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11327 11338])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11339 11354]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [11151 11356])
+            ("ClGlobals" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11498 11531])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11533 11544])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11576 11590]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [11420 11592])
+            ("ClInitializers" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11695 11735])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11773 11784])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11785 11799]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [11594 11801])
+            ("ClInvalidPointerPairs" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11891 11951])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11953 11964])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11969 11984]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [11803 11986])
+            ("ClInvalidPointerCmp" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12073 12130])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12132 12143])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12148 12163]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [11988 12165])
+            ("ClInvalidPointerSub" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12252 12309])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12311 12322])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12327 12342]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [12167 12344])
+            ("ClRealignStack" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12417 12483])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12489 12500])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12501 12513]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("unsigned int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [12346 12515])
+            ("ClInstrumentationWithCallsThreshold" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12626 12825])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12831 12842])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12843 12857]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [12517 12859])
+            ("ClMemoryAccessCallbackPrefix" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12965 13011])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13013 13024])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13029 13048]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [12861 13050])
+            ("ClInstrumentDynamicAllocas" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13170 13208])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13241 13252])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13253 13267]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [13052 13269])
+            ("ClSkipPromotableAllocas" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13357 13405])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13407 13418])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13423 13437]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [13271 13439])
+            ("ClMappingScale" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13657 13697])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13734 13745])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13746 13757]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [13565 13759])
+            ("ClMappingOffset" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13849 13905])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13927 13938])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13939 13950]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("uint64_t" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [13761 13952])
+            ("ClOpt" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14089 14125])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14154 14165])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14166 14180]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [14050 14182])
+            ("ClOptSameTemp" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14246 14292])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14298 14309])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14310 14324]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [14184 14326])
+            ("ClOptGlobals" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14416 14459])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14495 14506])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14507 14521]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [14328 14523])
+            ("ClOptStack" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14580 14631])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14637 14648])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14649 14664]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [14525 14666])
+            ("ClDynamicAllocaStack" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14748 14807])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14809 14820])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14825 14839]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [14668 14841])
+            ("ClForceExperiment" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14920 14975])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14977 14988])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14993 15004]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("uint32_t" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [14843 15006])
+            ("ClUsePrivateAlias" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15099 15151])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15175 15186])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15187 15202]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [15008 15204])
+            ("ClUseOdrIndicator" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15297 15352])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15376 15387])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15388 15403]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [15206 15405])
+            ("ClUseGlobalsGC" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15495 15599])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15620 15631])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15632 15646]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [15407 15648])
+            ("ClWithComdat" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15843 15897])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15916 15927])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15928 15942]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [15768 15944])
+            ("ClDebug" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16005 16022])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16024 16035])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16064 16075]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [15963 16077])
+            ("ClDebugStack" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16132 16155])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16190 16201])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16202 16213]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [16079 16215])
+            ("ClDebugFunc" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16276 16287])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16328 16350]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [16217 16352])
+            ("ClDebugMin" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16403 16429])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16462 16473])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16474 16486]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [16354 16488])
+            ("ClDebugMax" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16539 16565])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16598 16609])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16610 16622]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [16490 16624])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumInstrumentedReads" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16636 16657]))                  
+                :type "int")
+                nil [16626 16690])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumInstrumentedWrites" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16701 16723]))                  
+                :type "int")
+                nil [16691 16757])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumOptimizedAccessesToGlobalVar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16768 16800]))                  
+                :type "int")
+                nil [16758 16858])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumOptimizedAccessesToStackVar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16869 16900]))                  
+                :type "int")
+                nil [16859 16957])
+            ("unnamed" type
+               (:members 
+                  ( ("ShadowMapping" type
+                       (:members 
+                          ( ("Scale" variable (:type "int") (reparse-symbol classsubparts) [17216 17226])
+                            ("Offset" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17229 17245])
+                            ("OrShadowOffset" variable (:type "bool") (reparse-symbol classsubparts) [17248 17268])
+                            ("InGlobal" variable (:type "bool") (reparse-symbol classsubparts) [17271 17285]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [17191 17288]))                  
+                :type "namespace")
+                nil [16959 17291])
+            ("getShadowMapping" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("TargetTriple" variable
+                       (:reference 1
+                        :type ("Triple" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17358 17379])
+                    ("LongSize" variable (:type "int") (reparse-symbol arg-sub-list) [17380 17393])
+                    ("IsKasan" variable (:type "bool") (reparse-symbol arg-sub-list) [17432 17445]))                  
+                :type ("ShadowMapping" type (:type "class") nil nil))
+                nil [17320 21616])
+            ("RedzoneSizeForScale" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("MappingScale" variable (:type "int") (reparse-symbol arg-sub-list) [21652 21669]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [21618 21857])
+            ("GetCtorAndDtorPriority" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("TargetTriple" variable
+                       (:reference 1
+                        :type ("Triple" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21898 21919]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [21859 22061])
+            ("unnamed" type
+               (:members 
+                  ( ("ASanGlobalsMetadataWrapperPass" type
+                       (:superclasses 
+                          ( ("ModulePass" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [22202 22209])
+                            ("ID" variable
+                               (:typemodifiers ("static")
+                                :type "char")
+                                (reparse-symbol classsubparts) [22212 22227])
+                            ("ASanGlobalsMetadataWrapperPass" function
+                               (:constructor-flag t
+                                :type ("ASanGlobalsMetadataWrapperPass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [22231 22379])
+                            ("getGlobalsMD" function (:type ("GlobalsMetadata" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22667 22720])
+                            ("private" label nil (reparse-symbol classsubparts) [22722 22730])
+                            ("GlobalsMD" variable (:type ("GlobalsMetadata" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22733 22759]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [22143 22762])
+                    ("ASanGlobalsMetadataWrapperPass::ID" variable
+                       (:default-value "0"
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [22764 22808])
+                    ("AddressSanitizer" type
+                       (:members 
+                          ( ("AddressSanitizer" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22928 22938])
+                                    ("GlobalsMD" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("GlobalsMetadata" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22939 22972])
+                                    ("CompileKernel" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [22992 23018])
+                                    ("Recover" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [23020 23040])
+                                    ("UseAfterScope" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [23061 23087]))                                  
+                                :type ("AddressSanitizer" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [22911 23612])
+                            ("getAllocaSizeInBytes" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("AI" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("AllocaInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23646 23667]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [23616 24067])
+                            ("isInterestingAlloca" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("AI" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("AllocaInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24149 24170]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [24124 24171])
+                            ("isInterestingMemoryAccess" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("I" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24444 24459])
+                                    ("IsWrite" variable
+                                       (:pointer 1
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [24460 24474])
+                                    ("TypeSize" variable
+                                       (:pointer 1
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24510 24529])
+                                    ("Alignment" variable
+                                       (:pointer 1
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [24530 24550])
+                                    ("MaybeMask" variable
+                                       (:pointer 2
+                                        :default-value "nullptr"
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24586 24613]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [24411 24615])
+                            ("instrumentMop" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("ObjSizeVis" variable
+                                       (:reference 1
+                                        :type ("ObjectSizeOffsetVisitor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24638 24674])
+                                    ("I" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24675 24690])
+                                    ("UseCalls" variable (:type "bool") (reparse-symbol arg-sub-list) [24712 24726])
+                                    ("DL" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DataLayout" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24727 24748]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [24619 24749])
+                            ("instrumentPointerComparisonOrSubtraction" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24798 24813]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [24752 24814])
+                            ("instrumentAddress" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("OrigIns" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24840 24861])
+                                    ("InsertBefore" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24862 24888])
+                                    ("Addr" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24914 24926])
+                                    ("TypeSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24927 24945])
+                                    ("IsWrite" variable (:type "bool") (reparse-symbol arg-sub-list) [24946 24959])
+                                    ("SizeArgument" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24985 25005])
+                                    ("UseCalls" variable (:type "bool") (reparse-symbol arg-sub-list) [25006 25020])
+                                    ("Exp" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25021 25034]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [24817 25035])
+                            ("instrumentUnusualSizeOrAlignment" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25076 25091])
+                                    ("InsertBefore" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25132 25158])
+                                    ("Addr" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25159 25171])
+                                    ("TypeSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25212 25230])
+                                    ("IsWrite" variable (:type "bool") (reparse-symbol arg-sub-list) [25231 25244])
+                                    ("SizeArgument" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25285 25305])
+                                    ("UseCalls" variable (:type "bool") (reparse-symbol arg-sub-list) [25306 25320])
+                                    ("Exp" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25361 25374]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [25038 25375])
+                            ("createSlowPathCmp" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("IRB" variable
+                                       (:reference 1
+                                        :type ("IRBuilder" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25403 25420])
+                                    ("AddrLong" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25421 25437])
+                                    ("ShadowValue" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25465 25484])
+                                    ("TypeSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25485 25503]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [25378 25504])
+                            ("generateCrashCode" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("InsertBefore" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25538 25564])
+                                    ("Addr" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25565 25577])
+                                    ("IsWrite" variable (:type "bool") (reparse-symbol arg-sub-list) [25611 25624])
+                                    ("AccessSizeIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25625 25648])
+                                    ("SizeArgument" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25682 25702])
+                                    ("Exp" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25703 25716]))                                  
+                                :type ("Instruction" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [25507 25717])
+                            ("instrumentMemIntrinsic" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("MI" variable
+                                       (:pointer 1
+                                        :type ("MemIntrinsic" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25748 25765]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [25720 25766])
+                            ("memToShadow" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("Shadow" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25788 25802])
+                                    ("IRB" variable
+                                       (:reference 1
+                                        :type ("IRBuilder" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25803 25820]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [25769 25821])
+                            ("instrumentFunction" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25848 25860])
+                                    ("TLI" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("TargetLibraryInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25861 25890]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [25824 25891])
+                            ("maybeInsertAsanInitAtFunctionEntry" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25934 25946]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [25894 25947])
+                            ("maybeInsertDynamicShadowAtFunctionEntry" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25995 26007]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [25950 26008])
+                            ("markEscapedLocalAllocas" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26040 26052]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [26011 26053])
+                            ("private" label nil (reparse-symbol classsubparts) [26055 26063])
+                            ("FunctionStackPoisoner" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol classsubparts) [26073 26102])
+                            ("initializeCallbacks" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26131 26141]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [26106 26142])
+                            ("LooksLikeCodeInBug11395" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26175 26190]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [26146 26191])
+                            ("GlobalIsLinkerInitialized" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("G" variable
+                                       (:pointer 1
+                                        :type ("GlobalVariable" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26225 26243]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [26194 26244])
+                            ("isSafeAccess" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("ObjSizeVis" variable
+                                       (:reference 1
+                                        :type ("ObjectSizeOffsetVisitor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26265 26301])
+                                    ("Addr" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26302 26314])
+                                    ("TypeSize" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26335 26353]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [26247 26360])
+                            ("FunctionStateRAII" type
+                               (:members 
+                                  ( ("Pass" variable
+                                       (:pointer 1
+                                        :type ("AddressSanitizer" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [26439 26462])
+                                    ("FunctionStateRAII" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("Pass" variable
+                                               (:pointer 1
+                                                :type ("AddressSanitizer" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [26486 26509]))                                          
+                                        :type ("FunctionStateRAII" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [26468 26667])
+                                    ("FunctionStateRAII" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [26673 26781]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [26408 26786])
+                            ("C" variable
+                               (:pointer 1
+                                :type ("LLVMContext" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [26790 26805])
+                            ("TargetTriple" variable (:type ("Triple" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26808 26828])
+                            ("LongSize" variable (:type "int") (reparse-symbol classsubparts) [26831 26844])
+                            ("CompileKernel" variable (:type "bool") (reparse-symbol classsubparts) [26847 26866])
+                            ("Recover" variable (:type "bool") (reparse-symbol classsubparts) [26869 26882])
+                            ("UseAfterScope" variable (:type "bool") (reparse-symbol classsubparts) [26885 26904])
+                            ("IntptrTy" variable
+                               (:pointer 1
+                                :type ("Type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [26907 26922])
+                            ("Mapping" variable (:type ("ShadowMapping" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26925 26947])
+                            ("AsanHandleNoReturnFunc" variable (:type ("FunctionCallee" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26950 26988])
+                            ("AsanPtrCmpFunction" variable (:type ("FunctionCallee" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26991 27045])
+                            ("AsanPtrSubFunction" variable (:type ("FunctionCallee" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26991 27045])
+                            ("AsanShadowGlobal" variable
+                               (:pointer 1
+                                :type ("Constant" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [27048 27075])
+                            ("AsanErrorCallback" variable
+                               (:dereference 3
+                                :type ("FunctionCallee" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [27159 27220])
+                            ("AsanMemoryAccessCallback" variable
+                               (:dereference 3
+                                :type ("FunctionCallee" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [27223 27291])
+                            ("AsanErrorCallbackSized" variable
+                               (:dereference 2
+                                :type ("FunctionCallee" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [27357 27401])
+                            ("AsanMemoryAccessCallbackSized" variable
+                               (:dereference 2
+                                :type ("FunctionCallee" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [27404 27455])
+                            ("AsanMemmove" variable (:type ("FunctionCallee" type (:type "class") nil nil)) (reparse-symbol classsubparts) [27459 27510])
+                            ("AsanMemcpy" variable (:type ("FunctionCallee" type (:type "class") nil nil)) (reparse-symbol classsubparts) [27459 27510])
+                            ("AsanMemset" variable (:type ("FunctionCallee" type (:type "class") nil nil)) (reparse-symbol classsubparts) [27459 27510])
+                            ("EmptyAsm" variable
+                               (:pointer 1
+                                :type ("InlineAsm" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [27513 27533])
+                            ("LocalDynamicShadow" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [27536 27572])
+                            ("GlobalsMD" variable
+                               (:constant-flag t
+                                :type ("GlobalsMetadata" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [27575 27608])
+                            ("ProcessedAllocas" variable (:type ("DenseMap" type
+                                 (:template-specifier 
+                                    ( ("AllocaInst" type
+                                         (:pointer 1
+                                          :constant-flag t)
+                                          nil nil)
+                                      ("bool" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [27611 27663]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [22883 27666])
+                    ("AddressSanitizerLegacyPass" type
+                       (:superclasses 
+                          ( ("FunctionPass" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [27725 27732])
+                            ("ID" variable
+                               (:typemodifiers ("static")
+                                :type "char")
+                                (reparse-symbol classsubparts) [27735 27750])
+                            ("AddressSanitizerLegacyPass" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("CompileKernel" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [27790 27816])
+                                    ("Recover" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [27856 27876])
+                                    ("UseAfterScope" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [27916 27942]))                                  
+                                :type ("AddressSanitizerLegacyPass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [27763 28140])
+                            ("private" label nil (reparse-symbol classsubparts) [28820 28828])
+                            ("CompileKernel" variable (:type "bool") (reparse-symbol classsubparts) [28831 28850])
+                            ("Recover" variable (:type "bool") (reparse-symbol classsubparts) [28853 28866])
+                            ("UseAfterScope" variable (:type "bool") (reparse-symbol classsubparts) [28869 28888]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [27668 28891])
+                    ("ModuleAddressSanitizer" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [28924 28931])
+                            ("ModuleAddressSanitizer" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28957 28967])
+                                    ("GlobalsMD" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("GlobalsMetadata" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28968 29001])
+                                    ("CompileKernel" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [29027 29053])
+                                    ("Recover" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [29055 29075])
+                                    ("UseGlobalsGC" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [29102 29126])
+                                    ("UseOdrIndicator" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [29128 29156]))                                  
+                                :type ("ModuleAddressSanitizer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [28934 30421])
+                            ("instrumentModule" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30447 30456]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [30425 30457])
+                            ("private" label nil (reparse-symbol classsubparts) [30459 30467])
+                            ("initializeCallbacks" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30495 30505]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [30470 30506])
+                            ("InstrumentGlobals" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("IRB" variable
+                                       (:reference 1
+                                        :type ("IRBuilder" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30533 30550])
+                                    ("M" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30551 30561])
+                                    ("CtorComdat" variable
+                                       (:pointer 1
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [30562 30579]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [30510 30580])
+                            ("InstrumentGlobalsCOFF" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("IRB" variable
+                                       (:reference 1
+                                        :type ("IRBuilder" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30610 30627])
+                                    ("M" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30628 30638])
+                                    ("ExtendedGlobals" variable (:type ("ArrayRef" type
+                                         (:template-specifier 
+                                            ( ("GlobalVariable" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [30668 30711])
+                                    ("MetadataInitializers" variable (:type ("ArrayRef" type
+                                         (:template-specifier 
+                                            ( ("Constant" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [30741 30783]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [30583 30784])
+                            ("InstrumentGlobalsELF" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("IRB" variable
+                                       (:reference 1
+                                        :type ("IRBuilder" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30813 30830])
+                                    ("M" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30831 30841])
+                                    ("ExtendedGlobals" variable (:type ("ArrayRef" type
+                                         (:template-specifier 
+                                            ( ("GlobalVariable" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [30870 30913])
+                                    ("MetadataInitializers" variable (:type ("ArrayRef" type
+                                         (:template-specifier 
+                                            ( ("Constant" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [30942 30984])
+                                    ("UniqueModuleId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31013 31047]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [30787 31048])
+                            ("InstrumentGlobalsMachO" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("IRB" variable
+                                       (:reference 1
+                                        :type ("IRBuilder" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31079 31096])
+                                    ("M" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31097 31107])
+                                    ("ExtendedGlobals" variable (:type ("ArrayRef" type
+                                         (:template-specifier 
+                                            ( ("GlobalVariable" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [31138 31181])
+                                    ("MetadataInitializers" variable (:type ("ArrayRef" type
+                                         (:template-specifier 
+                                            ( ("Constant" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [31212 31254]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [31051 31255])
+                            ("InstrumentGlobalsWithMetadataArray" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("IRB" variable
+                                       (:reference 1
+                                        :type ("IRBuilder" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31300 31317])
+                                    ("M" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31318 31328])
+                                    ("ExtendedGlobals" variable (:type ("ArrayRef" type
+                                         (:template-specifier 
+                                            ( ("GlobalVariable" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [31366 31409])
+                                    ("MetadataInitializers" variable (:type ("ArrayRef" type
+                                         (:template-specifier 
+                                            ( ("Constant" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [31447 31489]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [31258 31490])
+                            ("CreateMetadataGlobal" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31531 31541])
+                                    ("Initializer" variable
+                                       (:pointer 1
+                                        :type ("Constant" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31542 31564])
+                                    ("OriginalName" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31604 31627]))                                  
+                                :type ("GlobalVariable" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [31494 31628])
+                            ("SetComdatForGlobalMetadata" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("G" variable
+                                       (:pointer 1
+                                        :type ("GlobalVariable" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31663 31681])
+                                    ("Metadata" variable
+                                       (:pointer 1
+                                        :type ("GlobalVariable" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31682 31707])
+                                    ("InternalSuffix" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31742 31767]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [31631 31768])
+                            ("CreateAsanModuleDtor" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31804 31814]))                                  
+                                :type ("IRBuilder" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [31771 31815])
+                            ("ShouldInstrumentGlobal" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("G" variable
+                                       (:pointer 1
+                                        :type ("GlobalVariable" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31847 31865]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [31819 31866])
+                            ("ShouldUseMachOGlobalsSection" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [31869 31911])
+                            ("getGlobalMetadataSection" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [31914 31957])
+                            ("poisonOneInitializer" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("GlobalInit" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31986 32007])
+                                    ("ModuleName" variable
+                                       (:pointer 1
+                                        :type ("GlobalValue" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32008 32032]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [31960 32033])
+                            ("createInitializerPoisonCalls" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32070 32080])
+                                    ("ModuleName" variable
+                                       (:pointer 1
+                                        :type ("GlobalValue" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32081 32105]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [32036 32106])
+                            ("MinRedzoneSizeForGlobal" function
+                               (:methodconst-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [32109 32200])
+                            ("GetAsanVersion" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32222 32238]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [32203 32245])
+                            ("GlobalsMD" variable
+                               (:constant-flag t
+                                :type ("GlobalsMetadata" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [32249 32282])
+                            ("CompileKernel" variable (:type "bool") (reparse-symbol classsubparts) [32285 32304])
+                            ("Recover" variable (:type "bool") (reparse-symbol classsubparts) [32307 32320])
+                            ("UseGlobalsGC" variable (:type "bool") (reparse-symbol classsubparts) [32323 32341])
+                            ("UsePrivateAlias" variable (:type "bool") (reparse-symbol classsubparts) [32344 32365])
+                            ("UseOdrIndicator" variable (:type "bool") (reparse-symbol classsubparts) [32368 32389])
+                            ("UseCtorComdat" variable (:type "bool") (reparse-symbol classsubparts) [32392 32411])
+                            ("IntptrTy" variable
+                               (:pointer 1
+                                :type ("Type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [32414 32429])
+                            ("C" variable
+                               (:pointer 1
+                                :type ("LLVMContext" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [32432 32447])
+                            ("TargetTriple" variable (:type ("Triple" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32450 32470])
+                            ("Mapping" variable (:type ("ShadowMapping" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32473 32495])
+                            ("AsanPoisonGlobals" variable (:type ("FunctionCallee" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32498 32531])
+                            ("AsanUnpoisonGlobals" variable (:type ("FunctionCallee" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32534 32569])
+                            ("AsanRegisterGlobals" variable (:type ("FunctionCallee" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32572 32607])
+                            ("AsanUnregisterGlobals" variable (:type ("FunctionCallee" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32610 32647])
+                            ("AsanRegisterImageGlobals" variable (:type ("FunctionCallee" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32650 32690])
+                            ("AsanUnregisterImageGlobals" variable (:type ("FunctionCallee" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32693 32735])
+                            ("AsanRegisterElfGlobals" variable (:type ("FunctionCallee" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32738 32776])
+                            ("AsanUnregisterElfGlobals" variable (:type ("FunctionCallee" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32779 32819])
+                            ("AsanCtorFunction" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("Function" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [32823 32860])
+                            ("AsanDtorFunction" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("Function" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [32863 32900]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [28893 32903])
+                    ("ModuleAddressSanitizerLegacyPass" type
+                       (:superclasses 
+                          ( ("ModulePass" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [32966 32973])
+                            ("ID" variable
+                               (:typemodifiers ("static")
+                                :type "char")
+                                (reparse-symbol classsubparts) [32976 32991])
+                            ("ModuleAddressSanitizerLegacyPass" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("CompileKernel" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [33037 33063])
+                                    ("Recover" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [33109 33129])
+                                    ("UseGlobalGC" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [33175 33198])
+                                    ("UseOdrIndicator" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [33244 33272]))                                  
+                                :type ("ModuleAddressSanitizerLegacyPass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [33004 33513])
+                            ("private" label nil (reparse-symbol classsubparts) [34051 34059])
+                            ("CompileKernel" variable (:type "bool") (reparse-symbol classsubparts) [34062 34081])
+                            ("Recover" variable (:type "bool") (reparse-symbol classsubparts) [34084 34097])
+                            ("UseGlobalGC" variable (:type "bool") (reparse-symbol classsubparts) [34100 34117])
+                            ("UseOdrIndicator" variable (:type "bool") (reparse-symbol classsubparts) [34120 34141]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [32905 34144])
+                    ("FunctionStackPoisoner" type
+                       (:superclasses 
+                          ( ("InstVisitor" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("F" variable (:type ("Function" type (:type "class") nil nil)) (reparse-symbol classsubparts) [34796 34808])
+                            ("ASan" variable (:type ("AddressSanitizer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [34811 34834])
+                            ("DIB" variable (:type ("DIBuilder" type (:type "class") nil nil)) (reparse-symbol classsubparts) [34837 34851])
+                            ("C" variable
+                               (:pointer 1
+                                :type ("LLVMContext" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [34854 34869])
+                            ("IntptrTy" variable
+                               (:pointer 1
+                                :type ("Type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [34872 34887])
+                            ("IntptrPtrTy" variable
+                               (:pointer 1
+                                :type ("Type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [34890 34908])
+                            ("Mapping" variable (:type ("ShadowMapping" type (:type "class") nil nil)) (reparse-symbol classsubparts) [34911 34933])
+                            ("AllocaVec" variable (:type ("SmallVector" type
+                                 (:template-specifier 
+                                    ( ("AllocaInst" type (:pointer 1) nil nil)
+                                      ("16"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [34937 34977])
+                            ("StaticAllocasToMoveUp" variable (:type ("SmallVector" type
+                                 (:template-specifier 
+                                    ( ("AllocaInst" type (:pointer 1) nil nil)
+                                      ("16"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [34980 35032])
+                            ("RetVec" variable (:type ("SmallVector" type
+                                 (:template-specifier 
+                                    ( ("Instruction" type (:pointer 1) nil nil)
+                                      ("8"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [35035 35072])
+                            ("StackAlignment" variable (:type "unsigned int") (reparse-symbol classsubparts) [35075 35099])
+                            ("AsanStackMallocFunc" variable
+                               (:dereference 1
+                                :type ("FunctionCallee" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [35103 35231])
+                            ("AsanStackFreeFunc" variable
+                               (:dereference 1
+                                :type ("FunctionCallee" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [35103 35231])
+                            ("AsanSetShadowFunc" variable
+                               (:dereference 1
+                                :default-value "{}"
+                                :type ("FunctionCallee" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [35234 35279])
+                            ("AsanPoisonStackMemoryFunc" variable (:type ("FunctionCallee" type (:type "class") nil nil)) (reparse-symbol classsubparts) [35282 35352])
+                            ("AsanUnpoisonStackMemoryFunc" variable (:type ("FunctionCallee" type (:type "class") nil nil)) (reparse-symbol classsubparts) [35282 35352])
+                            ("AsanAllocaPoisonFunc" variable (:type ("FunctionCallee" type (:type "class") nil nil)) (reparse-symbol classsubparts) [35355 35416])
+                            ("AsanAllocasUnpoisonFunc" variable (:type ("FunctionCallee" type (:type "class") nil nil)) (reparse-symbol classsubparts) [35355 35416])
+                            ("AllocaPoisonCall" type
+                               (:members 
+                                  ( ("InsBefore" variable
+                                       (:pointer 1
+                                        :type ("IntrinsicInst" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [35526 35551])
+                                    ("AI" variable
+                                       (:pointer 1
+                                        :type ("AllocaInst" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [35556 35571])
+                                    ("Size" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [35576 35590])
+                                    ("DoPoison" variable (:type "bool") (reparse-symbol classsubparts) [35595 35609]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [35496 35614])
+                            ("DynamicAllocaPoisonCallVec" variable (:type ("SmallVector" type
+                                 (:template-specifier 
+                                    ( ("AllocaPoisonCall" type nil nil nil)
+                                      ("8"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [35617 35677])
+                            ("StaticAllocaPoisonCallVec" variable (:type ("SmallVector" type
+                                 (:template-specifier 
+                                    ( ("AllocaPoisonCall" type nil nil nil)
+                                      ("8"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [35680 35739])
+                            ("HasUntracedLifetimeIntrinsic" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [35742 35784])
+                            ("DynamicAllocaVec" variable (:type ("SmallVector" type
+                                 (:template-specifier 
+                                    ( ("AllocaInst" type (:pointer 1) nil nil)
+                                      ("1"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [35788 35834])
+                            ("StackRestoreVec" variable (:type ("SmallVector" type
+                                 (:template-specifier 
+                                    ( ("IntrinsicInst" type (:pointer 1) nil nil)
+                                      ("1"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [35837 35885])
+                            ("DynamicAllocaLayout" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("AllocaInst" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [35888 35930])
+                            ("LocalEscapeCall" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("IntrinsicInst" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [35933 35974])
+                            ("DenseMap" variable (:type "int") (reparse-symbol classsubparts) [36075 36107])
+                            ("AllocaForValue" variable (:type ("AllocaForValueMapTy" type (:type "class") nil nil)) (reparse-symbol classsubparts) [36110 36145])
+                            ("HasNonEmptyInlineAsm" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [36149 36183])
+                            ("HasReturnsTwiceCall" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [36186 36219])
+                            ("EmptyInlineAsm" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("CallInst" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [36222 36263])
+                            ("FunctionStackPoisoner" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [36289 36301])
+                                    ("ASan" variable
+                                       (:reference 1
+                                        :type ("AddressSanitizer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [36302 36325]))                                  
+                                :type ("FunctionStackPoisoner" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [36267 36621])
+                            ("runOnFunction" function (:type "bool") (reparse-symbol classsubparts) [36625 37470])
+                            ("copyArgsPassedByValToAllocas" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [37711 37747])
+                            ("processStaticAllocas" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [37903 37931])
+                            ("processDynamicAllocas" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [37934 37963])
+                            ("createDynamicAllocasInitStorage" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [37967 38006])
+                            ("visitReturnInst" function
+                               (:arguments 
+                                  ( ("RI" variable
+                                       (:reference 1
+                                        :type ("ReturnInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38106 38121]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [38085 38148])
+                            ("visitResumeInst" function
+                               (:arguments 
+                                  ( ("RI" variable
+                                       (:reference 1
+                                        :type ("ResumeInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38212 38227]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [38191 38254])
+                            ("visitCleanupReturnInst" function
+                               (:arguments 
+                                  ( ("CRI" variable
+                                       (:reference 1
+                                        :type ("CleanupReturnInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38334 38357]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [38306 38385])
+                            ("unpoisonDynamicAllocasBeforeInst" function
+                               (:arguments 
+                                  ( ("InstBefore" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38427 38451])
+                                    ("SavedStack" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38492 38510]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [38389 39418])
+                            ("unpoisonDynamicAllocas" function (:type "void") (reparse-symbol classsubparts) [39462 39774])
+                            ("handleDynamicAllocaCall" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("AI" variable
+                                       (:pointer 1
+                                        :type ("AllocaInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [40387 40402]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [40358 40403])
+                            ("visitAllocaInst" function
+                               (:arguments 
+                                  ( ("AI" variable
+                                       (:reference 1
+                                        :type ("AllocaInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [40488 40503]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [40467 41017])
+                            ("visitIntrinsicInst" function
+                               (:arguments 
+                                  ( ("II" variable
+                                       (:reference 1
+                                        :type ("IntrinsicInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [41127 41145]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [41103 42538])
+                            ("visitCallSite" function
+                               (:arguments 
+                                  ( ("CS" variable (:type ("CallSite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42561 42573]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [42542 42911])
+                            ("initializeCallbacks" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [42977 42987]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [42952 42988])
+                            ("copyToShadow" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("ShadowMask" variable (:type ("ArrayRef" type
+                                         (:template-specifier 
+                                            ( ("uint8_t" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [43227 43256])
+                                    ("ShadowBytes" variable (:type ("ArrayRef" type
+                                         (:template-specifier 
+                                            ( ("uint8_t" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [43257 43287])
+                                    ("IRB" variable
+                                       (:reference 1
+                                        :type ("IRBuilder" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43308 43325])
+                                    ("ShadowBase" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43326 43344]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [43209 43345])
+                            ("copyToShadow" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("ShadowMask" variable (:type ("ArrayRef" type
+                                         (:template-specifier 
+                                            ( ("uint8_t" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [43366 43395])
+                                    ("ShadowBytes" variable (:type ("ArrayRef" type
+                                         (:template-specifier 
+                                            ( ("uint8_t" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [43396 43426])
+                                    ("Begin" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43447 43460])
+                                    ("End" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43461 43472])
+                                    ("IRB" variable
+                                       (:reference 1
+                                        :type ("IRBuilder" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43473 43490])
+                                    ("ShadowBase" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43511 43529]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [43348 43530])
+                            ("copyToShadowInline" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("ShadowMask" variable (:type ("ArrayRef" type
+                                         (:template-specifier 
+                                            ( ("uint8_t" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [43557 43586])
+                                    ("ShadowBytes" variable (:type ("ArrayRef" type
+                                         (:template-specifier 
+                                            ( ("uint8_t" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [43613 43643])
+                                    ("Begin" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43644 43657])
+                                    ("End" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43684 43695])
+                                    ("IRB" variable
+                                       (:reference 1
+                                        :type ("IRBuilder" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43696 43713])
+                                    ("ShadowBase" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43714 43732]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [43533 43733])
+                            ("poisonAlloca" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("V" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43755 43764])
+                                    ("Size" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43765 43779])
+                                    ("IRB" variable
+                                       (:reference 1
+                                        :type ("IRBuilder" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43780 43797])
+                                    ("DoPoison" variable (:type "bool") (reparse-symbol arg-sub-list) [43798 43812]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [43737 43813])
+                            ("createAllocaForLayout" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("IRB" variable
+                                       (:reference 1
+                                        :type ("IRBuilder" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43846 43863])
+                                    ("L" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ASanStackFrameLayout" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43864 43894])
+                                    ("Dynamic" variable (:type "bool") (reparse-symbol arg-sub-list) [43926 43939]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [43817 43940])
+                            ("createPHI" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("IRB" variable
+                                       (:reference 1
+                                        :type ("IRBuilder" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43962 43979])
+                                    ("Cond" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43980 43992])
+                                    ("ValueIfTrue" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43993 44012])
+                                    ("ThenTerm" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [44034 44056])
+                                    ("ValueIfFalse" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [44057 44077]))                                  
+                                :type ("PHINode" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [43943 44078]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [34719 44081]))                  
+                :type "namespace")
+                nil [22063 44084])
+            ("parse" function
+               (:parent "LocationMetadata"
+                :arguments 
+                  ( ("MDN" variable
+                       (:pointer 1
+                        :type ("MDNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44142 44154]))                  
+                :type "void")
+                nil [44113 44465])
+            ("GlobalsMetadata" function
+               (:constructor-flag t
+                :parent "GlobalsMetadata"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44721 44731]))                  
+                :type ("GlobalsMetadata" type (:type "class") nil nil))
+                nil [44688 45830])
+            ("ASanGlobalsMetadataAnalysis::Key" variable (:type ("AnalysisKey" type (:type "class") nil nil)) nil [45832 45877])
+            ("run" function
+               (:parent "ASanGlobalsMetadataAnalysis"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45928 45938])
+                    ("AM" variable
+                       (:reference 1
+                        :type ("ModuleAnalysisManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45988 46014]))                  
+                :type ("GlobalsMetadata" type (:type "class") nil nil))
+                nil [45879 46047])
+            ("AddressSanitizerPass" function
+               (:constructor-flag t
+                :parent "AddressSanitizerPass"
+                :arguments 
+                  ( ("CompileKernel" variable (:type "bool") (reparse-symbol arg-sub-list) [46092 46111])
+                    ("Recover" variable (:type "bool") (reparse-symbol arg-sub-list) [46112 46125])
+                    ("UseAfterScope" variable (:type "bool") (reparse-symbol arg-sub-list) [46169 46188]))                  
+                :type ("AddressSanitizerPass" type (:type "class") nil nil))
+                nil [46049 46280])
+            ("run" function
+               (:parent "AddressSanitizerPass"
+                :arguments 
+                  ( ("F" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46326 46338])
+                    ("AM" variable
+                       (:reference 1
+                        :type ("AnalysisManager" type
+                             (:template-specifier 
+                                ( ("Function" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [46383 46413]))                  
+                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                nil [46282 47067])
+            ("ModuleAddressSanitizerPass" function
+               (:constructor-flag t
+                :parent "ModuleAddressSanitizerPass"
+                :arguments 
+                  ( ("CompileKernel" variable (:type "bool") (reparse-symbol arg-sub-list) [47124 47143])
+                    ("Recover" variable (:type "bool") (reparse-symbol arg-sub-list) [47199 47212])
+                    ("UseGlobalGC" variable (:type "bool") (reparse-symbol arg-sub-list) [47268 47285])
+                    ("UseOdrIndicator" variable (:type "bool") (reparse-symbol arg-sub-list) [47341 47362]))                  
+                :type ("ModuleAddressSanitizerPass" type (:type "class") nil nil))
+                nil [47069 47484])
+            ("run" function
+               (:parent "ModuleAddressSanitizerPass"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47536 47546])
+                    ("AM" variable
+                       (:reference 1
+                        :type ("AnalysisManager" type
+                             (:template-specifier 
+                                ( ("Module" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47597 47625]))                  
+                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                nil [47486 47956])
+            ("AddressSanitizerLegacyPass::ID" variable
+               (:default-value "0"
+                :type "char")
+                nil [48171 48211])
+            ("createAddressSanitizerFunctionPass" function
+               (:pointer 1
+                :parent "llvm"
+                :arguments 
+                  ( ("CompileKernel" variable (:type "bool") (reparse-symbol arg-sub-list) [48689 48708])
+                    ("Recover" variable (:type "bool") (reparse-symbol arg-sub-list) [48764 48777])
+                    ("UseAfterScope" variable (:type "bool") (reparse-symbol arg-sub-list) [48833 48852]))                  
+                :type ("FunctionPass" type (:type "class") nil nil))
+                nil [48634 48973])
+            ("ModuleAddressSanitizerLegacyPass::ID" variable
+               (:default-value "0"
+                :type "char")
+                nil [48975 49021])
+            ("createModuleAddressSanitizerLegacyPassPass" function
+               (:pointer 1
+                :parent "llvm"
+                :arguments 
+                  ( ("CompileKernel" variable (:type "bool") (reparse-symbol arg-sub-list) [49267 49286])
+                    ("Recover" variable (:type "bool") (reparse-symbol arg-sub-list) [49287 49300])
+                    ("UseGlobalsGC" variable (:type "bool") (reparse-symbol arg-sub-list) [49301 49319])
+                    ("UseOdrIndicator" variable (:type "bool") (reparse-symbol arg-sub-list) [49320 49341]))                  
+                :type ("ModulePass" type (:type "class") nil nil))
+                nil [49201 49530])
+            ("TypeSizeToSizeIndex" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("TypeSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49566 49584]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [49532 49689])
+            ("createPrivateGlobalForSourceLoc" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49796 49806])
+                    ("MD" variable (:type ("LocationMetadata" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49862 49882]))                  
+                :type ("GlobalVariable" type (:type "class") nil nil))
+                nil [49741 50434])
+            ("GlobalWasGeneratedByCompiler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("GlobalVariable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50540 50558]))                  
+                :type "bool")
+                nil [50499 51000])
+            ("memToShadow" function
+               (:pointer 1
+                :parent "AddressSanitizer"
+                :arguments 
+                  ( ("Shadow" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51039 51053])
+                    ("IRB" variable
+                       (:reference 1
+                        :type ("IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51054 51071]))                  
+                :type ("Value" type (:type "class") nil nil))
+                nil [51002 51500])
+            ("instrumentMemIntrinsic" function
+               (:parent "AddressSanitizer"
+                :arguments 
+                  ( ("MI" variable
+                       (:pointer 1
+                        :type ("MemIntrinsic" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51584 51601]))                  
+                :type "void")
+                nil [51538 52261])
+            ("isInterestingAlloca" function
+               (:parent "AddressSanitizer"
+                :arguments 
+                  ( ("AI" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AllocaInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52357 52378]))                  
+                :type "bool")
+                nil [52314 53252])
+            ("isInterestingMemoryAccess" function
+               (:pointer 1
+                :parent "AddressSanitizer"
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53305 53320])
+                    ("IsWrite" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [53372 53386])
+                    ("TypeSize" variable
+                       (:pointer 1
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53438 53457])
+                    ("Alignment" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [53509 53529])
+                    ("MaybeMask" variable
+                       (:pointer 2
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53581 53599]))                  
+                :type ("Value" type (:type "class") nil nil))
+                nil [53254 57066])
+            ("isPointerOperand" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57097 57106]))                  
+                :type "bool")
+                nil [57068 57172])
+            ("isInterestingPointerComparison" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57374 57389]))                  
+                :type "bool")
+                nil [57331 57615])
+            ("isInterestingPointerSubtraction" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57818 57833]))                  
+                :type "bool")
+                nil [57774 58085])
+            ("GlobalIsLinkerInitialized" function
+               (:parent "AddressSanitizer"
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("GlobalVariable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58136 58154]))                  
+                :type "bool")
+                nil [58087 58558])
+            ("instrumentPointerComparisonOrSubtraction" function
+               (:parent "AddressSanitizer"
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58629 58644]))                  
+                :type "void")
+                nil [58560 58952])
+            ("doInstrumentAddress" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Pass" variable
+                       (:pointer 1
+                        :type ("AddressSanitizer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58986 59009])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59010 59025])
+                    ("InsertBefore" variable
+                       (:pointer 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59058 59084])
+                    ("Addr" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59085 59097])
+                    ("Alignment" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [59130 59149])
+                    ("Granularity" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [59150 59171])
+                    ("TypeSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59204 59222])
+                    ("IsWrite" variable (:type "bool") (reparse-symbol arg-sub-list) [59223 59236])
+                    ("SizeArgument" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59269 59289])
+                    ("UseCalls" variable (:type "bool") (reparse-symbol arg-sub-list) [59290 59304])
+                    ("Exp" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59337 59350]))                  
+                :type "void")
+                nil [58954 59932])
+            ("instrumentMaskedLoadOrStore" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Pass" variable
+                       (:pointer 1
+                        :type ("AddressSanitizer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59974 59997])
+                    ("DL" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DataLayout" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60038 60059])
+                    ("IntptrTy" variable
+                       (:pointer 1
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60060 60075])
+                    ("Mask" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60116 60128])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60129 60144])
+                    ("Addr" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60185 60197])
+                    ("Alignment" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [60198 60217])
+                    ("Granularity" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [60258 60279])
+                    ("TypeSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60280 60298])
+                    ("IsWrite" variable (:type "bool") (reparse-symbol arg-sub-list) [60339 60352])
+                    ("SizeArgument" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60353 60373])
+                    ("UseCalls" variable (:type "bool") (reparse-symbol arg-sub-list) [60414 60428])
+                    ("Exp" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60429 60442]))                  
+                :type "void")
+                nil [59934 61767])
+            ("instrumentMop" function
+               (:parent "AddressSanitizer"
+                :arguments 
+                  ( ("ObjSizeVis" variable
+                       (:reference 1
+                        :type ("ObjectSizeOffsetVisitor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61806 61842])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61880 61895])
+                    ("UseCalls" variable (:type "bool") (reparse-symbol arg-sub-list) [61896 61910])
+                    ("DL" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DataLayout" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61948 61969]))                  
+                :type "void")
+                nil [61769 64210])
+            ("generateCrashCode" function
+               (:pointer 1
+                :parent "AddressSanitizer"
+                :arguments 
+                  ( ("InsertBefore" variable
+                       (:pointer 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64261 64287])
+                    ("Addr" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64337 64349])
+                    ("IsWrite" variable (:type "bool") (reparse-symbol arg-sub-list) [64350 64363])
+                    ("AccessSizeIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64413 64436])
+                    ("SizeArgument" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64486 64506])
+                    ("Exp" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64556 64569]))                  
+                :type ("Instruction" type (:type "class") nil nil))
+                nil [64212 65463])
+            ("createSlowPathCmp" function
+               (:pointer 1
+                :parent "AddressSanitizer"
+                :arguments 
+                  ( ("IRB" variable
+                       (:reference 1
+                        :type ("IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65508 65525])
+                    ("AddrLong" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65526 65542])
+                    ("ShadowValue" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65586 65605])
+                    ("TypeSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65649 65667]))                  
+                :type ("Value" type (:type "class") nil nil))
+                nil [65465 66324])
+            ("instrumentAddress" function
+               (:parent "AddressSanitizer"
+                :arguments 
+                  ( ("OrigIns" variable
+                       (:pointer 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66367 66388])
+                    ("InsertBefore" variable
+                       (:pointer 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66430 66456])
+                    ("Addr" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66457 66469])
+                    ("TypeSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66511 66529])
+                    ("IsWrite" variable (:type "bool") (reparse-symbol arg-sub-list) [66530 66543])
+                    ("SizeArgument" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66585 66605])
+                    ("UseCalls" variable (:type "bool") (reparse-symbol arg-sub-list) [66606 66620])
+                    ("Exp" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66662 66675]))                  
+                :type "void")
+                nil [66326 69649])
+            ("instrumentUnusualSizeOrAlignment" function
+               (:parent "AddressSanitizer"
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69952 69967])
+                    ("InsertBefore" variable
+                       (:pointer 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69968 69994])
+                    ("Addr" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69995 70007])
+                    ("TypeSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70008 70026])
+                    ("IsWrite" variable (:type "bool") (reparse-symbol arg-sub-list) [70031 70044])
+                    ("SizeArgument" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70045 70065])
+                    ("UseCalls" variable (:type "bool") (reparse-symbol arg-sub-list) [70066 70080])
+                    ("Exp" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70081 70094]))                  
+                :type "void")
+                nil [69891 70860])
+            ("poisonOneInitializer" function
+               (:parent "ModuleAddressSanitizer"
+                :arguments 
+                  ( ("GlobalInit" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70912 70933])
+                    ("ModuleName" variable
+                       (:pointer 1
+                        :type ("GlobalValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70984 71008]))                  
+                :type "void")
+                nil [70862 71627])
+            ("createInitializerPoisonCalls" function
+               (:parent "ModuleAddressSanitizer"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71692 71702])
+                    ("ModuleName" variable
+                       (:pointer 1
+                        :type ("GlobalValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71703 71727]))                  
+                :type "void")
+                nil [71629 72494])
+            ("ShouldInstrumentGlobal" function
+               (:parent "ModuleAddressSanitizer"
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("GlobalVariable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72548 72566]))                  
+                :type "bool")
+                nil [72496 77452])
+            ("ShouldUseMachOGlobalsSection" function
+               (:methodconst-flag t
+                :parent "ModuleAddressSanitizer"
+                :type "bool")
+                nil [77648 78062])
+            ("getGlobalMetadataSection" function
+               (:methodconst-flag t
+                :parent "ModuleAddressSanitizer"
+                :type ("StringRef" type (:type "class") nil nil))
+                nil [78064 78568])
+            ("initializeCallbacks" function
+               (:parent "ModuleAddressSanitizer"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78619 78629]))                  
+                :type "void")
+                nil [78570 79889])
+            ("SetComdatForGlobalMetadata" function
+               (:parent "ModuleAddressSanitizer"
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("GlobalVariable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80107 80125])
+                    ("Metadata" variable
+                       (:pointer 1
+                        :type ("GlobalVariable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80126 80151])
+                    ("InternalSuffix" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80152 80177]))                  
+                :type "void")
+                nil [80046 81218])
+            ("CreateMetadataGlobal" function
+               (:pointer 1
+                :parent "ModuleAddressSanitizer"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81386 81396])
+                    ("Initializer" variable
+                       (:pointer 1
+                        :type ("Constant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81397 81419])
+                    ("OriginalName" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81465 81488]))                  
+                :type ("GlobalVariable" type (:type "class") nil nil))
+                nil [81324 81919])
+            ("CreateAsanModuleDtor" function
+               (:parent "ModuleAddressSanitizer"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81978 81988]))                  
+                :type ("IRBuilder" type (:type "class") nil nil))
+                nil [81921 82294])
+            ("InstrumentGlobalsCOFF" function
+               (:parent "ModuleAddressSanitizer"
+                :arguments 
+                  ( ("IRB" variable
+                       (:reference 1
+                        :type ("IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82352 82369])
+                    ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82370 82380])
+                    ("ExtendedGlobals" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("GlobalVariable" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [82381 82424])
+                    ("MetadataInitializers" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Constant" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [82429 82471]))                  
+                :type "void")
+                nil [82296 83299])
+            ("InstrumentGlobalsELF" function
+               (:parent "ModuleAddressSanitizer"
+                :arguments 
+                  ( ("IRB" variable
+                       (:reference 1
+                        :type ("IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83356 83373])
+                    ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83374 83384])
+                    ("ExtendedGlobals" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("GlobalVariable" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [83385 83428])
+                    ("MetadataInitializers" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Constant" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [83433 83475])
+                    ("UniqueModuleId" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83480 83514]))                  
+                :type "void")
+                nil [83301 86130])
+            ("InstrumentGlobalsMachO" function
+               (:parent "ModuleAddressSanitizer"
+                :arguments 
+                  ( ("IRB" variable
+                       (:reference 1
+                        :type ("IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86189 86206])
+                    ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86207 86217])
+                    ("ExtendedGlobals" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("GlobalVariable" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [86218 86261])
+                    ("MetadataInitializers" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Constant" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [86266 86308]))                  
+                :type "void")
+                nil [86132 88903])
+            ("InstrumentGlobalsWithMetadataArray" function
+               (:parent "ModuleAddressSanitizer"
+                :arguments 
+                  ( ("IRB" variable
+                       (:reference 1
+                        :type ("IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88974 88991])
+                    ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88992 89002])
+                    ("ExtendedGlobals" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("GlobalVariable" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [89003 89046])
+                    ("MetadataInitializers" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("Constant" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [89051 89093]))                  
+                :type "void")
+                nil [88905 90175])
+            ("InstrumentGlobals" function
+               (:parent "ModuleAddressSanitizer"
+                :arguments 
+                  ( ("IRB" variable
+                       (:reference 1
+                        :type ("IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90543 90560])
+                    ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90561 90571])
+                    ("CtorComdat" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [90619 90636]))                  
+                :type "bool")
+                nil [90496 98796])
+            ("GetAsanVersion" function
+               (:methodconst-flag t
+                :parent "ModuleAddressSanitizer"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [98841 98857]))                  
+                :type "int")
+                nil [98798 99154])
+            ("instrumentModule" function
+               (:parent "ModuleAddressSanitizer"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [99202 99212]))                  
+                :type "bool")
+                nil [99156 100794])
+            ("initializeCallbacks" function
+               (:parent "AddressSanitizer"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100839 100849]))                  
+                :type "void")
+                nil [100796 104154])
+            ("maybeInsertAsanInitAtFunctionEntry" function
+               (:parent "AddressSanitizer"
+                :arguments 
+                  ( ("F" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104214 104226]))                  
+                :type "bool")
+                nil [104156 104961])
+            ("maybeInsertDynamicShadowAtFunctionEntry" function
+               (:parent "AddressSanitizer"
+                :arguments 
+                  ( ("F" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105026 105038]))                  
+                :type "void")
+                nil [104963 105995])
+            ("markEscapedLocalAllocas" function
+               (:parent "AddressSanitizer"
+                :arguments 
+                  ( ("F" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106044 106056]))                  
+                :type "void")
+                nil [105997 107229])
+            ("instrumentFunction" function
+               (:parent "AddressSanitizer"
+                :arguments 
+                  ( ("F" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107273 107285])
+                    ("TLI" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TargetLibraryInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107328 107357]))                  
+                :type "bool")
+                nil [107231 112289])
+            ("LooksLikeCodeInBug11395" function
+               (:parent "AddressSanitizer"
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112535 112550]))                  
+                :type "bool")
+                nil [112488 112799])
+            ("initializeCallbacks" function
+               (:parent "FunctionStackPoisoner"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112849 112859]))                  
+                :type "void")
+                nil [112801 114094])
+            ("copyToShadowInline" function
+               (:parent "FunctionStackPoisoner"
+                :arguments 
+                  ( ("ShadowMask" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("uint8_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [114143 114172])
+                    ("ShadowBytes" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("uint8_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [114220 114250])
+                    ("Begin" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [114298 114311])
+                    ("End" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [114312 114323])
+                    ("IRB" variable
+                       (:reference 1
+                        :type ("IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114371 114388])
+                    ("ShadowBase" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114436 114454]))                  
+                :type "void")
+                nil [114096 115926])
+            ("copyToShadow" function
+               (:parent "FunctionStackPoisoner"
+                :arguments 
+                  ( ("ShadowMask" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("uint8_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [115969 115998])
+                    ("ShadowBytes" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("uint8_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [116040 116070])
+                    ("IRB" variable
+                       (:reference 1
+                        :type ("IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116112 116129])
+                    ("ShadowBase" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116130 116148]))                  
+                :type "void")
+                nil [115928 116232])
+            ("copyToShadow" function
+               (:parent "FunctionStackPoisoner"
+                :arguments 
+                  ( ("ShadowMask" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("uint8_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [116275 116304])
+                    ("ShadowBytes" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("uint8_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [116346 116376])
+                    ("Begin" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [116418 116431])
+                    ("End" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [116432 116443])
+                    ("IRB" variable
+                       (:reference 1
+                        :type ("IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116485 116502])
+                    ("ShadowBase" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116503 116521]))                  
+                :type "void")
+                nil [116234 117331])
+            ("StackMallocSizeClass" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("LocalStackSize" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [117510 117534]))                  
+                :type "int")
+                nil [117478 117761])
+            ("copyArgsPassedByValToAllocas" function
+               (:parent "FunctionStackPoisoner"
+                :type "void")
+                nil [117763 118755])
+            ("createPHI" function
+               (:pointer 1
+                :parent "FunctionStackPoisoner"
+                :arguments 
+                  ( ("IRB" variable
+                       (:reference 1
+                        :type ("IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118799 118816])
+                    ("Cond" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118817 118829])
+                    ("ValueIfTrue" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118872 118891])
+                    ("ThenTerm" variable
+                       (:pointer 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118934 118956])
+                    ("ValueIfFalse" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118999 119019]))                  
+                :type ("PHINode" type (:type "class") nil nil))
+                nil [118757 119284])
+            ("createAllocaForLayout" function
+               (:pointer 1
+                :parent "FunctionStackPoisoner"
+                :arguments 
+                  ( ("IRB" variable
+                       (:reference 1
+                        :type ("IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119343 119360])
+                    ("L" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ASanStackFrameLayout" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119361 119391])
+                    ("Dynamic" variable (:type "bool") (reparse-symbol arg-sub-list) [119392 119405]))                  
+                :type ("Value" type (:type "class") nil nil))
+                nil [119286 120034])
+            ("createDynamicAllocasInitStorage" function
+               (:parent "FunctionStackPoisoner"
+                :type "void")
+                nil [120036 120379])
+            ("processDynamicAllocas" function
+               (:parent "FunctionStackPoisoner"
+                :type "void")
+                nil [120381 121232])
+            ("processStaticAllocas" function
+               (:parent "FunctionStackPoisoner"
+                :type "void")
+                nil [121234 132085])
+            ("poisonAlloca" function
+               (:parent "FunctionStackPoisoner"
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132128 132137])
+                    ("Size" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [132138 132152])
+                    ("IRB" variable
+                       (:reference 1
+                        :type ("IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132194 132211])
+                    ("DoPoison" variable (:type "bool") (reparse-symbol arg-sub-list) [132212 132226]))                  
+                :type "void")
+                nil [132087 132508])
+            ("handleDynamicAllocaCall" function
+               (:parent "FunctionStackPoisoner"
+                :arguments 
+                  ( ("AI" variable
+                       (:pointer 1
+                        :type ("AllocaInst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [133111 133126]))                  
+                :type "void")
+                nil [133059 135672])
+            ("isSafeAccess" function
+               (:methodconst-flag t
+                :parent "AddressSanitizer"
+                :arguments 
+                  ( ("ObjSizeVis" variable
+                       (:reference 1
+                        :type ("ObjectSizeOffsetVisitor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135888 135924])
+                    ("Addr" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135961 135973])
+                    ("TypeSize" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [135974 135992]))                  
+                :type "bool")
+                nil [135852 136515]))          
+      :file "AddressSanitizer.cpp"
+      :pointmax 136516
+      :fsize 136515
+      :lastmodtime '(24391 26990 439406 376000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG_TYPE" . ((string "\"asan\"" 3062 . 3068)))
+          )
+))
+  :file "!home!khadinh!gits!llvm-project!llvm!lib!Transforms!Instrumentation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

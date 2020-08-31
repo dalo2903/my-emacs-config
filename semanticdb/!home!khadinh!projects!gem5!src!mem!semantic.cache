@@ -1,0 +1,332 @@
+;; Object semanticdb-project-database-file-156d8dafc014
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-156d8dafc014"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-156d8dafc026"
+      :major-mode c++-mode
+      :tags 
+        '( ("__MEM_PORT_HH__" variable (:constant-flag t) nil [2300 2315])
+            ("base/addr_range.hh" include nil nil [2317 2346])
+            ("mem/packet.hh" include nil nil [2347 2371])
+            ("mem/protocol/atomic.hh" include nil nil [2372 2405])
+            ("mem/protocol/functional.hh" include nil nil [2406 2443])
+            ("mem/protocol/timing.hh" include nil nil [2444 2477])
+            ("sim/port.hh" include nil nil [2478 2500])
+            ("SimObject" type
+               (:prototype t
+                :type "class")
+                nil [2502 2518])
+            ("SlavePort" type
+               (:prototype t
+                :type "class")
+                nil [2547 2563])
+            ("MasterPort" type
+               (:superclasses 
+                  ( ("Port" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("AtomicRequestProtocol" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("TimingRequestProtocol" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("FunctionalRequestProtocol" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("SlavePort" friend nil (reparse-symbol classsubparts) [3116 3138])
+                    ("private" label nil (reparse-symbol classsubparts) [3143 3151])
+                    ("_slavePort" variable
+                       (:pointer 1
+                        :type ("SlavePort" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3156 3178])
+                    ("protected" label nil (reparse-symbol classsubparts) [3182 3192])
+                    ("owner" variable (:type ("SimObject" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3197 3214])
+                    ("public" label nil (reparse-symbol classsubparts) [3218 3225])
+                    ("MasterPort" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3241 3265])
+                            ("_owner" variable
+                               (:pointer 1
+                                :type ("SimObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3266 3284])
+                            ("id" variable
+                               (:default-value "InvalidPortID"
+                                :type ("PortID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3300 3323]))                          
+                        :type ("MasterPort" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3230 3325])
+                    ("MasterPort" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3330 3352])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [3527 3536])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [3634 3643])
+                    ("isSnooping" function
+                       (:methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4029 4078])
+                    ("getAddrRanges" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type ("AddrRangeList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4159 4195])
+                    ("printAddr" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("a" variable (:type ("Addr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4367 4374]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4352 4375])
+                    ("public" label nil (reparse-symbol classsubparts) [4379 4386])
+                    ("sendAtomic" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pkt" variable (:type ("PacketPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4711 4725]))                          
+                        :type ("Tick" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4695 4726])
+                    ("sendAtomicBackdoor" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pkt" variable (:type ("PacketPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5117 5131])
+                            ("backdoor" variable
+                               (:reference 1
+                                :type ("MemBackdoorPtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5132 5157]))                          
+                        :type ("Tick" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5093 5158])
+                    ("public" label nil (reparse-symbol classsubparts) [5162 5169])
+                    ("sendFunctional" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("pkt" variable (:type ("PacketPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5481 5495]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5461 5502])
+                    ("public" label nil (reparse-symbol classsubparts) [5506 5513])
+                    ("sendTimingReq" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pkt" variable (:type ("PacketPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5971 5985]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5952 5986])
+                    ("tryTiming" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("pkt" variable (:type ("PacketPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6374 6388]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6359 6395])
+                    ("sendTimingSnoopResp" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pkt" variable (:type ("PacketPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6795 6809]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6770 6810])
+                    ("sendRetryResp" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [7084 7113])
+                    ("protected" label nil (reparse-symbol classsubparts) [7117 7127])
+                    ("recvRangeChange" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [7457 7491]))                  
+                :type "class")
+                nil [2981 8107])
+            ("SlavePort" type
+               (:superclasses 
+                  ( ("Port" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("AtomicResponseProtocol" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("TimingResponseProtocol" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("FunctionalResponseProtocol" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("MasterPort" friend nil (reparse-symbol classsubparts) [8607 8630])
+                    ("private" label nil (reparse-symbol classsubparts) [8635 8643])
+                    ("_masterPort" variable
+                       (:pointer 1
+                        :type ("MasterPort" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8648 8672])
+                    ("defaultBackdoorWarned" variable (:type "bool") (reparse-symbol classsubparts) [8677 8704])
+                    ("protected" label nil (reparse-symbol classsubparts) [8708 8718])
+                    ("owner" variable (:type ("SimObject" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8723 8740])
+                    ("public" label nil (reparse-symbol classsubparts) [8744 8751])
+                    ("SlavePort" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8766 8790])
+                            ("_owner" variable
+                               (:pointer 1
+                                :type ("SimObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8791 8809])
+                            ("id" variable
+                               (:default-value "InvalidPortID"
+                                :type ("PortID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8824 8847]))                          
+                        :type ("SlavePort" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8756 8849])
+                    ("SlavePort" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [8854 8875])
+                    ("isSnooping" function
+                       (:methodconst-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [9020 9081])
+                    ("sendRangeChange" function
+                       (:methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [9153 9345])
+                    ("getAddrRanges" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :type ("AddrRangeList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9615 9663])
+                    ("public" label nil (reparse-symbol classsubparts) [9823 9830])
+                    ("sendAtomicSnoop" function
+                       (:arguments 
+                          ( ("pkt" variable (:type ("PacketPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10176 10190]))                          
+                        :type ("Tick" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10151 10270])
+                    ("public" label nil (reparse-symbol classsubparts) [10274 10281])
+                    ("sendFunctionalSnoop" function
+                       (:methodconst-flag t
+                        :arguments 
+                          ( ("pkt" variable (:type ("PacketPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10614 10628]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10585 10711])
+                    ("public" label nil (reparse-symbol classsubparts) [10715 10722])
+                    ("sendTimingResp" function
+                       (:arguments 
+                          ( ("pkt" variable (:type ("PacketPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11189 11203]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [11165 11282])
+                    ("sendTimingSnoopReq" function
+                       (:arguments 
+                          ( ("pkt" variable (:type ("PacketPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11573 11587]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11545 11663])
+                    ("sendRetryReq" function (:type "void") (reparse-symbol classsubparts) [11804 11898])
+                    ("sendRetrySnoopResp" function (:type "void") (reparse-symbol classsubparts) [12045 12151])
+                    ("protected" label nil (reparse-symbol classsubparts) [12155 12165])
+                    ("slaveUnbind" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [12270 12289])
+                    ("slaveBind" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("master_port" variable
+                               (:reference 1
+                                :type ("MasterPort" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12408 12432]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12393 12433])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [12552 12561]))                  
+                :type "class")
+                nil [8470 12831])
+            ("sendAtomic" function
+               (:parent "MasterPort"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("pkt" variable (:type ("PacketPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12868 12882]))                  
+                :type ("Tick" type (:type "class") nil nil))
+                nil [12833 12943])
+            ("sendAtomicBackdoor" function
+               (:parent "MasterPort"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("pkt" variable (:type ("PacketPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12988 13002])
+                    ("backdoor" variable
+                       (:reference 1
+                        :type ("MemBackdoorPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13003 13028]))                  
+                :type ("Tick" type (:type "class") nil nil))
+                nil [12945 13107])
+            ("sendFunctional" function
+               (:methodconst-flag t
+                :parent "MasterPort"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("pkt" variable (:type ("PacketPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13148 13162]))                  
+                :type "void")
+                nil [13109 13233])
+            ("sendTimingReq" function
+               (:parent "MasterPort"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("pkt" variable (:type ("PacketPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13273 13287]))                  
+                :type "bool")
+                nil [13235 13351])
+            ("tryTiming" function
+               (:methodconst-flag t
+                :parent "MasterPort"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("pkt" variable (:type ("PacketPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13387 13401]))                  
+                :type "bool")
+                nil [13353 13471])
+            ("sendTimingSnoopResp" function
+               (:parent "MasterPort"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("pkt" variable (:type ("PacketPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13517 13531]))                  
+                :type "bool")
+                nil [13473 13601])
+            ("sendRetryResp" function
+               (:parent "MasterPort"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [13603 13700]))          
+      :file "port.hh"
+      :pointmax 13727
+      :fsize 13726
+      :lastmodtime '(24319 26497 377616 787000)
+      :unmatched-syntax '((semantic-list 12748 . 12828) (symbol 12735 . 12743) (semantic-list 12719 . 12734) (symbol 12700 . 12719) (BOOL 12691 . 12695) (semantic-list 12614 . 12685) (symbol 12601 . 12609) (semantic-list 12585 . 12600) (symbol 12576 . 12585) (BOOL 12567 . 12571) (semantic-list 12510 . 12551) (symbol 12492 . 12510) (symbol 12487 . 12491) (semantic-list 9817 . 9819) (symbol 9808 . 9816) (semantic-list 9795 . 9807) (symbol 9791 . 9795) (VOID 9786 . 9790) (semantic-list 9779 . 9781) (symbol 9770 . 9778) (semantic-list 9767 . 9769) (symbol 9761 . 9767) (VOID 9756 . 9760) (punctuation 8630 . 8631) (semantic-list 8033 . 8104) (symbol 8020 . 8028) (semantic-list 8017 . 8019) (symbol 7999 . 8017) (VOID 7990 . 7994) (semantic-list 7904 . 7984) (symbol 7891 . 7899) (semantic-list 7875 . 7890) (symbol 7857 . 7875) (VOID 7848 . 7852) (semantic-list 7759 . 7842) (symbol 7746 . 7754) (semantic-list 7730 . 7745) (symbol 7711 . 7730) (VOID 7702 . 7706) (semantic-list 7598 . 7696) (symbol 7585 . 7593) (semantic-list 7569 . 7584) (symbol 7554 . 7569) (symbol 7545 . 7549) (semantic-list 3631 . 3633) (symbol 3625 . 3631) (VOID 3620 . 3624) (semantic-list 3514 . 3526) (symbol 3510 . 3514) (VOID 3505 . 3509) (punctuation 3138 . 3139))
+      :lexical-table 
+        '(("__MEM_PORT_HH__")
+          )
+)
+    (semanticdb-table "semanticdb-table-156d8cad4050"
+      :file "packet.hh"
+      :fsize 45167
+      :lastmodtime '(24319 26497 373616 489000)))
+  :file "!home!khadinh!projects!gem5!src!mem!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/gits/llvm-project/" "~/gits/compiler-for-security/" "~/gits/llvm-tutor/" "~/projects/gem5/")

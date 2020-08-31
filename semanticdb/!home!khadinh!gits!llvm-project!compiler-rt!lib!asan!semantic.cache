@@ -1,0 +1,504 @@
+;; Object semanticdb-project-database-file-15743c60575a
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15743c60575a"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15743c605774"
+      :major-mode c++-mode
+      :tags 
+        '( ("asan_allocator.h" include nil nil [641 668])
+            ("asan_descriptions.h" include nil nil [669 699])
+            ("asan_flags.h" include nil nil [700 723])
+            ("asan_internal.h" include nil nil [724 750])
+            ("asan_mapping.h" include nil nil [751 776])
+            ("asan_report.h" include nil nil [777 801])
+            ("asan_thread.h" include nil nil [802 826])
+            ("unnamed" type
+               (:members 
+                  ( ("__asan" using (:type ("__asan" type
+                         (:prototype t
+                          :type "namespace")
+                          nil nil)) (reparse-symbol namespacesubparts) [840 863])
+                    ("FindInfoForStackVar" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("addr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [897 907])
+                            ("frame_descr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [908 932])
+                            ("offset" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [933 945])
+                            ("name" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [978 989])
+                            ("name_size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [990 1005])
+                            ("region_address" variable
+                               (:pointer 1
+                                :type ("uptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1038 1059])
+                            ("region_size" variable
+                               (:pointer 1
+                                :type ("uptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1060 1078]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [865 1741])
+                    ("AsanGetStack" function
+                       (:arguments 
+                          ( ("addr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1761 1771])
+                            ("trace" variable
+                               (:pointer 1
+                                :type ("uptr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1772 1784])
+                            ("size" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1785 1794])
+                            ("thread_id" variable
+                               (:pointer 1
+                                :type ("u32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1795 1810])
+                            ("alloc_stack" variable (:type "bool") (reparse-symbol arg-sub-list) [1836 1853]))                          
+                        :type ("uptr" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1743 2504]))                  
+                :type "namespace")
+                nil [828 2507])
+            ("__asan_locate_address" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("addr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2587 2597])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2598 2609])
+                    ("name_size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2610 2625])
+                    ("region_address_ptr" variable
+                       (:pointer 1
+                        :type ("uptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2660 2685])
+                    ("region_size_ptr" variable
+                       (:pointer 1
+                        :type ("uptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2720 2742]))                  
+                :type "char")
+                nil [2553 4210])
+            ("__asan_get_alloc_stack" function
+               (:arguments 
+                  ( ("addr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4270 4280])
+                    ("trace" variable
+                       (:pointer 1
+                        :type ("uptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4281 4293])
+                    ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4294 4304])
+                    ("thread_id" variable
+                       (:pointer 1
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4305 4320]))                  
+                :type ("uptr" type (:type "class") nil nil))
+                nil [4242 4401])
+            ("__asan_get_free_stack" function
+               (:arguments 
+                  ( ("addr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4460 4470])
+                    ("trace" variable
+                       (:pointer 1
+                        :type ("uptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4471 4483])
+                    ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4484 4494])
+                    ("thread_id" variable
+                       (:pointer 1
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4495 4510]))                  
+                :type ("uptr" type (:type "class") nil nil))
+                nil [4433 4592])
+            ("__asan_get_shadow_mapping" function
+               (:arguments 
+                  ( ("shadow_scale" variable
+                       (:pointer 1
+                        :type ("uptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4655 4674])
+                    ("shadow_offset" variable
+                       (:pointer 1
+                        :type ("uptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4675 4695]))                  
+                :type "void")
+                nil [4624 4810]))          
+      :file "asan_debugging.cpp"
+      :pointmax 4811
+      :fsize 4810
+      :lastmodtime '(24391 25612 223943 495000)
+      :unmatched-syntax '((symbol 4594 . 4623) (symbol 4403 . 4432) (symbol 4212 . 4241) (symbol 2523 . 2552)))
+    (semanticdb-table "semanticdb-table-15743c6a828a"
+      :file "asan_allocator.h"
+      :fsize 8246
+      :lastmodtime '(24391 25612 223943 495000))
+    (semanticdb-table "semanticdb-table-15743c6a82aa"
+      :file "asan_descriptions.h"
+      :fsize 7776
+      :lastmodtime '(24391 25612 223943 495000))
+    (semanticdb-table "semanticdb-table-15743c6a82ca"
+      :file "asan_flags.h"
+      :fsize 1482
+      :lastmodtime '(24391 25612 223943 495000))
+    (semanticdb-table "semanticdb-table-15743c754d38"
+      :file "asan_internal.h"
+      :fsize 5712
+      :lastmodtime '(24391 26988 895292 274000))
+    (semanticdb-table "semanticdb-table-15743c754d58"
+      :file "asan_mapping.h"
+      :fsize 15072
+      :lastmodtime '(24391 26988 895292 274000))
+    (semanticdb-table "semanticdb-table-15743c754d78"
+      :file "asan_report.h"
+      :fsize 4696
+      :lastmodtime '(24391 25612 223943 495000))
+    (semanticdb-table "semanticdb-table-15743c8b54d6"
+      :file "asan_thread.h"
+      :fsize 5693
+      :lastmodtime '(24391 25612 223943 495000))
+    (semanticdb-table "semanticdb-table-15743c62cbdc"
+      :major-mode c++-mode
+      :tags 
+        '( ("asan_poisoning.h" include nil nil [593 620])
+            ("asan_report.h" include nil nil [621 645])
+            ("asan_stack.h" include nil nil [646 669])
+            ("sanitizer_common/sanitizer_atomic.h" include nil nil [670 716])
+            ("sanitizer_common/sanitizer_libc.h" include nil nil [717 761])
+            ("sanitizer_common/sanitizer_flags.h" include nil nil [762 807])
+            ("__asan" type
+               (:members 
+                  ( ("can_poison_memory" variable
+                       (:typemodifiers ("static")
+                        :type ("atomic_uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [829 869])
+                    ("SetCanPoisonMemory" function
+                       (:arguments 
+                          ( ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [895 906]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [871 975])
+                    ("CanPoisonMemory" function (:type "bool") (reparse-symbol namespacesubparts) [977 1067])
+                    ("PoisonShadow" function
+                       (:arguments 
+                          ( ("addr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1087 1097])
+                            ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1098 1108])
+                            ("value" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1109 1118]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1069 1404])
+                    ("PoisonShadowPartialRightRedzone" function
+                       (:arguments 
+                          ( ("addr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1443 1453])
+                            ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1491 1501])
+                            ("redzone_size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1539 1557])
+                            ("value" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1595 1604]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1406 1785])
+                    ("ShadowSegmentEndpoint" type
+                       (:members 
+                          ( ("chunk" variable
+                               (:pointer 1
+                                :type ("u8" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1820 1830])
+                            ("offset" variable (:type ("s8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1833 1843])
+                            ("value" variable (:type ("s8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1877 1886])
+                            ("ShadowSegmentEndpoint" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("address" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1935 1948]))                                  
+                                :type ("ShadowSegmentEndpoint" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1913 2062]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1787 2065])
+                    ("FlushUnneededASanShadowMemory" function
+                       (:arguments 
+                          ( ("p" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2102 2109])
+                            ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2110 2120]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2067 2320])
+                    ("AsanPoisonOrUnpoisonIntraObjectRedzone" function
+                       (:arguments 
+                          ( ("ptr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2366 2375])
+                            ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2376 2386])
+                            ("poison" variable (:type "bool") (reparse-symbol arg-sub-list) [2387 2399]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2322 3008]))                  
+                :type "namespace")
+                nil [809 3011])
+            ("__asan" using (:type ("__asan" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [3092 3115])
+            ("__asan_poison_memory_region" function
+               (:arguments 
+                  ( ("addr" variable
+                       (:pointer 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3737 3763])
+                    ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3764 3774]))                  
+                :type "void")
+                nil [3704 5052])
+            ("__asan_unpoison_memory_region" function
+               (:arguments 
+                  ( ("addr" variable
+                       (:pointer 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5089 5115])
+                    ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5116 5126]))                  
+                :type "void")
+                nil [5054 6000])
+            ("__asan_address_is_poisoned" function
+               (:arguments 
+                  ( ("addr" variable
+                       (:pointer 1
+                        :typemodifiers ("volatile")
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6033 6059]))                  
+                :type "int")
+                nil [6002 6111])
+            ("__asan_region_is_poisoned" function
+               (:arguments 
+                  ( ("beg" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6144 6153])
+                    ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6154 6164]))                  
+                :type ("uptr" type (:type "class") nil nil))
+                nil [6113 7449])
+            ("CHECK_SMALL_REGION" variable (:constant-flag t) nil [7459 7477])
+            ("__sanitizer_unaligned_load16" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uu16" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8188 8202]))                  
+                :type ("u16" type (:type "class") nil nil))
+                nil [8155 8263])
+            ("__sanitizer_unaligned_load32" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uu32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8339 8353]))                  
+                :type ("u32" type (:type "class") nil nil))
+                nil [8306 8414])
+            ("__sanitizer_unaligned_load64" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uu64" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8490 8504]))                  
+                :type ("u64" type (:type "class") nil nil))
+                nil [8457 8565])
+            ("__sanitizer_unaligned_store16" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("uu16" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8643 8651])
+                    ("x" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8652 8658]))                  
+                :type "void")
+                nil [8608 8715])
+            ("__sanitizer_unaligned_store32" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("uu32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8793 8801])
+                    ("x" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8802 8808]))                  
+                :type "void")
+                nil [8758 8865])
+            ("__sanitizer_unaligned_store64" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("uu64" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8943 8951])
+                    ("x" variable (:type ("u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8952 8958]))                  
+                :type "void")
+                nil [8908 9015])
+            ("__asan_poison_cxx_array_cookie" function
+               (:arguments 
+                  ( ("p" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9094 9101]))                  
+                :type "void")
+                nil [9058 9272])
+            ("__asan_load_cxx_array_cookie" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("uptr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9349 9357]))                  
+                :type ("uptr" type (:type "class") nil nil))
+                nil [9315 10200])
+            ("PoisonAlignedStackMemory" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10387 10397])
+                    ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10398 10408])
+                    ("do_poison" variable (:type "bool") (reparse-symbol arg-sub-list) [10409 10424]))                  
+                :type "void")
+                nil [10350 11173])
+            ("__asan_set_shadow_00" function
+               (:arguments 
+                  ( ("addr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11201 11211])
+                    ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11212 11222]))                  
+                :type "void")
+                nil [11175 11265])
+            ("__asan_set_shadow_f1" function
+               (:arguments 
+                  ( ("addr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11293 11303])
+                    ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11304 11314]))                  
+                :type "void")
+                nil [11267 11360])
+            ("__asan_set_shadow_f2" function
+               (:arguments 
+                  ( ("addr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11388 11398])
+                    ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11399 11409]))                  
+                :type "void")
+                nil [11362 11455])
+            ("__asan_set_shadow_f3" function
+               (:arguments 
+                  ( ("addr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11483 11493])
+                    ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11494 11504]))                  
+                :type "void")
+                nil [11457 11550])
+            ("__asan_set_shadow_f5" function
+               (:arguments 
+                  ( ("addr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11578 11588])
+                    ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11589 11599]))                  
+                :type "void")
+                nil [11552 11645])
+            ("__asan_set_shadow_f8" function
+               (:arguments 
+                  ( ("addr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11673 11683])
+                    ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11684 11694]))                  
+                :type "void")
+                nil [11647 11740])
+            ("__asan_poison_stack_memory" function
+               (:arguments 
+                  ( ("addr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11774 11784])
+                    ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11785 11795]))                  
+                :type "void")
+                nil [11742 11902])
+            ("__asan_unpoison_stack_memory" function
+               (:arguments 
+                  ( ("addr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11938 11948])
+                    ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11949 11959]))                  
+                :type "void")
+                nil [11904 12069])
+            ("__sanitizer_annotate_contiguous_container" function
+               (:arguments 
+                  ( ("beg_p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12118 12136])
+                    ("end_p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12184 12202])
+                    ("old_mid_p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12250 12272])
+                    ("new_mid_p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12320 12342]))                  
+                :type "void")
+                nil [12071 14297])
+            ("__sanitizer_contiguous_container_find_bad_address" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("beg_p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [14366 14384])
+                    ("mid_p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [14385 14403])
+                    ("end_p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [14404 14422]))                  
+                :type "void")
+                nil [14299 15528])
+            ("__sanitizer_verify_contiguous_container" function
+               (:arguments 
+                  ( ("beg_p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15574 15592])
+                    ("mid_p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15637 15655])
+                    ("end_p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15700 15718]))                  
+                :type "int")
+                nil [15530 15873])
+            ("__asan_poison_intra_object_redzone" function
+               (:arguments 
+                  ( ("ptr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15956 15965])
+                    ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15966 15976]))                  
+                :type "void")
+                nil [15916 16039])
+            ("__asan_unpoison_intra_object_redzone" function
+               (:arguments 
+                  ( ("ptr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16124 16133])
+                    ("size" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16134 16144]))                  
+                :type "void")
+                nil [16082 16208])
+            ("__lsan" type
+               (:members 
+                  ( ("WordIsPoisoned" function
+                       (:arguments 
+                          ( ("addr" variable (:type ("uptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16307 16317]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [16287 16384]))                  
+                :type "namespace")
+                nil [16268 16386]))          
+      :file "asan_poisoning.cpp"
+      :pointmax 16387
+      :fsize 16386
+      :lastmodtime '(24391 26988 895292 274000)
+      :unmatched-syntax '((symbol 16052 . 16081) (symbol 15886 . 15915) (symbol 9285 . 9314) (symbol 9028 . 9057) (symbol 8878 . 8907) (symbol 8728 . 8757) (symbol 8578 . 8607) (symbol 8427 . 8456) (symbol 8276 . 8305) (symbol 8125 . 8154) (EXPLICIT 1904 . 1912))
+      :lexical-table 
+        '(("CHECK_SMALL_REGION" (spp-arg-list ("p" "size" "isWrite") 7477 . 7495) . 
+              ((DO "do" 7517 . 7519) (semantic-list "{                                                        \\
+    uptr __p = reinterpret_cast<uptr>(p);                     \\
+    uptr __size = size;                                       \\
+    if (UNLIKELY(__asan::AddressIsPoisoned(__p) ||            \\
+        __asan::AddressIsPoisoned(__p + __size - 1))) {       \\
+      GET_CURRENT_PC_BP_SP;                                   \\
+      uptr __bad = __asan_region_is_poisoned(__p, __size);    \\
+      __asan_report_error(pc, bp, sp, __bad, isWrite, __size, 0);\\
+    }                                                         \\
+  }" 7520 . 8097) (WHILE "while" 8098 . 8103) (semantic-list "(false)" 8104 . 8111)))
+          )
+)
+    (semanticdb-table "semanticdb-table-15743ca915e4"
+      :file "asan_poisoning.h"
+      :fsize 3944
+      :lastmodtime '(24391 25612 223943 495000))
+    (semanticdb-table "semanticdb-table-15743ca91604"
+      :file "asan_stack.h"
+      :fsize 3372
+      :lastmodtime '(24391 25612 223943 495000)))
+  :file "!home!khadinh!gits!llvm-project!compiler-rt!lib!asan!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
